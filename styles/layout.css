@@ -3,69 +3,22 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-main {
-    flex: 1;
+main.mainhome {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
 
-/* Mobile Layout */
-
-@media screen and (max-width: 600px) {
-
-    body.bodyhome{
-        background-image: url("/img/bg_mobile.jpg");
-        background-size: 100% 100%;;
-        background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Navigation-Bar */
-    /* ############## */
-
-    .nav_top {
-        padding: 10px;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .nav_top ul{
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        border: 1px red solid;
-        display: none;
-    }
-    
-    .nav_top .icon-wrapper {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    .search {
-        background: transparent url("/img/Search.svg") no-repeat 13px;
-        border: 1px rebeccapurple solid;
-        width: 30px;
-        height: 30px;
-    }
-    
-    .hamburger_menu {
-        background-image:url("img/sys/hamburger.png");
-        border: 1px rebeccapurple solid;
-        width: 30px;
-        height: 30px;
-    }
-    
-
+body.bodyhome {
+    background-image: url("/img/bg_mobile.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-
-/* Desktop Layout */
 
 @media screen and (min-width: 600px) {
 
@@ -76,35 +29,109 @@ main {
         margin: 0;
         padding: 0;
     }
+}
 
-    .nav_top {
-        padding: 10px;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-    }
+/* ## Top-Navigation ## */
+
+.nav_top {
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    display: inline-block;
+    background: url("/img/sys/logo_white.png") no-repeat center; 
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px; 
+}
+
+.nav_top ul{
+    display: none;
+}
+
+/* Einblenden des Desktop-Menüs */
+@media screen and (min-width: 600px) {
 
     .nav_top ul{
         margin: 0;
         padding: 0;
         justify-content: center;
+        align-items: center;
+        display: inline; 
     }
+
     .nav_top ul li {
         display: inline-block;
         list-style-type: none;
         padding: 0 15px;
     }
+}
 
-    .search {
-        background: transparent url("/img/Search.svg") no-repeat 13px;
-        border: 1px rebeccapurple solid;
-        width: 30px;
-        height: 30px;
+a.menu_header {
+    position: relative; 
+    text-decoration: none;
+}
+
+a.menu_header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; 
+    height: 2px;
+    background-color: currentColor; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a.menu_header:hover::after {
+    transform: scaleX(1);
+}
+
+.nav_top .icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search_svg {
+    width: 20px;
+    height: 20px;
+    fill: #F9F8F4; 
+}
+
+.hamburger_menu {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger_svg {
+    width: 20px;
+    height: 20px;
+    fill: #F9F8F4; 
+}
+
+@media screen and (min-width: 600px) {
+
+    .hamburger_menu {
+        display: none;
     }
 }
 
-/* Footer */
+/* ## Top-Navigation Ende ## */
+
+/* ## Footer ## */
 
 footer.footerhome {
     width: 100%;
@@ -112,7 +139,7 @@ footer.footerhome {
     justify-content: flex-end;
     align-items: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     }
 
@@ -122,24 +149,26 @@ footer.footerhome {
     }
 }
 
-    .footer_social ul {
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
+.footer_social ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
 
-    .footer_social ul li {
-        display: inline-block;
-        list-style-type: none;
-        padding: 0 5px;
-    }
+.footer_social ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 5px;
+}
 
-    .social-icon {
-        margin: 0 5px;
-    }
-    
-    .social-svg {
-        width: 30px;
-        height: 30px;
-        fill: #DFDFDF; 
-    }
+.social-icon {
+    margin: 0 5px;
+}
+
+.social-svg {
+    width: 20px;
+    height: 20px;
+    fill: #F9F8F4; 
+}
+
+/* ## Footer Ende ## */
