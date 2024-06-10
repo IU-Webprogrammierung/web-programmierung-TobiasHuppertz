@@ -42,9 +42,17 @@ body.bodyhome {
     align-items: center;
 }
 
-a.logo {
+a.logo_home {
     display: inline-block;
     background: url("/img/sys/logo_white.png") no-repeat center; 
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px; 
+}
+
+a.logo {
+    display: inline-block;
+    background: url("/img/sys/logo_schwarz.png") no-repeat center; 
     background-size: 40px 40px;
     width: 40px;
     height: 40px; 
@@ -72,12 +80,13 @@ a.logo {
     }
 }
 
-a.menu_header {
+.menu_header,.menu_header_home {
     position: relative; 
+    top: 0;
     text-decoration: none;
 }
 
-a.menu_header::after {
+.menu_header::after,.menu_header_home::after {
     content: '';
     position: absolute;
     left: 0;
@@ -89,7 +98,7 @@ a.menu_header::after {
     transition: transform 0.3s ease;
 }
 
-a.menu_header:hover::after {
+.menu_header:hover::after,.menu_header_home:hover::after {
     transform: scaleX(1);
 }
 
@@ -104,10 +113,16 @@ a.menu_header:hover::after {
     align-items: center;
 }
 
-.search_svg {
+.search_svg_home {
     width: 20px;
     height: 20px;
     fill: #F9F8F4; 
+}
+
+.search_svg {
+    width: 20px;
+    height: 20px;
+    fill: #000; 
 }
 
 .hamburger_menu {
@@ -116,10 +131,16 @@ a.menu_header:hover::after {
     align-items: center;
 }
 
-.hamburger_svg {
+.hamburger_svg_home {
     width: 20px;
     height: 20px;
     fill: #F9F8F4; 
+}
+
+.hamburger_svg {
+    width: 20px;
+    height: 20px;
+    fill: #000; 
 }
 
 @media screen and (min-width: 600px) {
@@ -133,7 +154,7 @@ a.menu_header:hover::after {
 
 /* ## Footer ## */
 
-footer.footerhome {
+footer,footer.footerhome {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -172,3 +193,104 @@ footer.footerhome {
 }
 
 /* ## Footer Ende ## */
+
+/* ## Cards-Layout (guides.html) ## */
+
+.guide_article_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Zentriert die Boxen horizontal */
+    align-items: center; /* Zentriert die Boxen vertikal */
+    width: 100%;
+    max-width: 1300px; /* Optional: Begrenzung der maximalen Breite */
+    box-sizing: border-box;
+    border: 1px solid blue
+}
+
+/*
+.card_guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 10px; 
+    box-sizing: border-box;
+    border: 1px solid blue
+  }
+*/
+
+.card_guide_wrapper {
+    background-color: green;
+    color: white;
+    width: 350px;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+@media (max-width: 600px) {
+    .card_guide_wrapper {
+        width: 100%; /* Eine Box pro Zeile bei kleinerer Bildschirmbreite */
+    }
+}
+
+
+.card_guide_figure {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+.card_guide_img {
+    display: block;
+    max-width: 100%;
+    height: 240px;
+    width: 380px;
+  }
+
+.card_guide_box {
+    padding: 1rem;
+    border: 1px purple solid;
+}
+
+.card_guide_title {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    height: 40px; /* Klärung */
+}
+
+
+.card_guide_body {
+    color: #000;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+    max-width: 350px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px yellow solid;
+}
+
+
+.guide_button {
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

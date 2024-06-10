@@ -4,57 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBlog</title>
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/typography.css">
 </head>
 <body>
-    <header>
-        <a id="logo" href="index.html">Logo</a>
-        <nav>
+    <header>       
+        <nav class="nav_top">
+            <a class="logo" href="index.html"></a>
             <ul>
-                <li><a id="menu_header" href="aboutme.html">Über mich</a></li>
-                <li><a id="menu_header" href="discover.html">Entdecke</a></li>
-                <li><a id="menu_header" href="guides.html">Guides</a></li>
+                <li><a class="menu_header" href="aboutme.html">Über mich</a></li>
+                <li><a class="menu_header" href="discover.html">Entdecke</a></li>
+                <li><a class="menu_header" href="guides.html">Guides</a></li>
             </ul>
+            <div class="icon-wrapper">
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search_svg" width="90" height="90" viewBox="0 0 30 30">
+                        <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                    </svg>
+                </div>
+                <div class="hamburger_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hamburger_svg" viewBox="0 0 50 50" width="100px" height="100px">
+                        <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"/>
+                    </svg>
+                </div>
+            </div>
         </nav>
-        <div id="Search">
-            <input id="search_input" type="text" placeholder="Suche...">
-        </div>
     </header>
     <main>
-        <div class="guide_wrapper">
-            <img src="img\guides\cover_cambodia_market.jpg" class="guide_img" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen" width="600" height="400">
-            <div class="guide_text_wrapper">
-                <div class="guide_font_header">Die besten Nachtmärkte rund um Phnom Penh</div>
-                <div class="guide_line"></div>
-                <div class="guide_text">Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</div>
-                <button class="guide_button" type="button">Weiterlesen</button>
-            </div>    
+        <div class="guide_article_wrapper">
+            <article class="card_guide">
+                <div class="card_guide_wrapper">
+                    <figure class="card_guide_figure">   
+                        <img src="img\guides\cover_cambodia_market.jpg" class="card_guide_img" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                    </figure>     
+                    <div class="card_guide_box">
+                        <h2 class="card_guide_title">Nachtmärkte rund um Phnom Penh</h2>
+                        <hr class="card_guide_line">
+                        <section class="card_guide_body">
+                            <p>Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</p>
+                        </section>
+                        <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>    
+                </div>
+            </article>
+            <article class="card_guide">
+                <div class="card_guide_wrapper">
+                    <figure class="card_guide_figure">   
+                        <img src="img\guides\cover_angkor_wat.jpg" class="card_guide_img" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                    </figure>     
+                    <div class="card_guide_box">
+                        <h2 class="card_guide_title">Must-sees im Angkor Wat</h2>
+                        <hr class="card_guide_line">
+                        <section class="card_guide_body">
+                            <p>Angkor Wat, die bekannteste Tempelanlage in der Region Angkor, ist ein architektonisches Meisterwerk und ein Symbol für Kambodscha...</p>
+                        </section>
+                        <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>    
+                </div>
+            </article>
+            <article class="card_guide">
+                <div class="card_guide_wrapper">
+                    <figure class="card_guide_figure">   
+                        <img src="img\guides\cover_cuba_beaches.jpg" class="card_guide_img" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                    </figure>     
+                    <div class="card_guide_box">
+                        <h2 class="card_guide_title">Die schönsten Strände Kubas</h2>
+                        <hr class="card_guide_line">
+                        <section class="card_guide_body">
+                            <p>Kuba ist ein Paradies für Strandliebhaber, und seine Küsten bieten einige der schönsten Strände der Welt. Hier sind meine Top 3 Empfehlungen...</p>
+                        </section>
+                        <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>    
+                </div>
+            </article>
+            <!--
+            <article class="card_guide">
+                <div class="card_guide_wrapper">
+                    <figure class="card_guide_figure">   
+                        <img src="img\guides\cover_cuba_beaches.jpg" class="card_guide_img" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                    </figure>     
+                    <div class="card_guide_box">
+                        <h2 class="card_guide_title">Die besten Aktivitäten in Hoi An</h2>
+                        <hr class="card_guide_line">
+                        <section class="card_guide_body">
+                            <p>Hoi An, eine antike Stadt in Vietnam, ist ein wahrer Traum für Reisende. Hier sind einige der besten Aktivitäten, die du in Hoi An erleben kannst...</p>
+                        </section>
+                        <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>    
+                </div>
+            </article>
+            -->
         </div>
-        <div class="guide_wrapper">
-            <img src="img\guides\cover_angkor_wat.jpg" class="guide_img" alt="Ein Baum wuchert um eine alte Ruine" width="600" height="400">
-            <div class="guide_text_wrapper">
-                <div class="guide_font_header">Must-sees im Angkor Wat</div>
-                <div class="guide_line"></div>
-                <div class="guide_text">Angkor Wat, die bekannteste Tempelanlage in der Region Angkor, ist ein architektonisches Meisterwerk und ein Symbol für Kambodscha...</div>
-                <button class="guide_button" type="button">Weiterlesen</button>
-            </div>    
-        </div>
-        <div class="guide_wrapper">
-            <img src="img\guides\cover_cuba_beaches.jpg" class="guide_img" alt="Oldtimer steht am einen Strand unter den Bäumen" width="600" height="400">
-            <div class="guide_text_wrapper">
-                <div class="guide_font_header">Die schönsten Strände Kubas</div>
-                <div class="guide_line"></div>
-                <div class="guide_text">Kuba ist ein Paradies für Strandliebhaber, und seine Küsten bieten einige der schönsten Strände der Welt. Hier sind meine Top 3 Empfehlungen...</div>
-                <button class="guide_button" type="button">Weiterlesen</button>
-            </div>    
-        </div>
-        <div class="guide_wrapper">
-            <img src="img\guides\cover_hoian_tipps.jpg" class="guide_img" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen" width="600" height="400">
-            <div class="guide_text_wrapper">
-                <div class="guide_font_header">Die besten Aktivitäten in Hoi An</div>
-                <div class="guide_line"></div>
-                <div class="guide_text">Hoi An, eine antike Stadt in Vietnam, ist ein wahrer Traum für Reisende. Hier sind einige der besten Aktivitäten, die du in Hoi An erleben kannst...</div>
-                <button class="guide_button" type="button">Weiterlesen</button>
-            </div>    
     </main>
     <footer>
         <nav>
