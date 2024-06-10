@@ -154,7 +154,17 @@ a.logo {
 
 /* ## Footer ## */
 
-footer,footer.footerhome {
+footer.footermain {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+}
+
+footer.footerhome {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -162,7 +172,7 @@ footer,footer.footerhome {
     padding: 20px 0;
     position: relative;
     bottom: 0;
-    }
+}
 
 @media screen and (max-width: 600px) {
     footer.footerhome {
@@ -182,14 +192,32 @@ footer,footer.footerhome {
     padding: 0 5px;
 }
 
-.social-icon {
+.social_icon {
     margin: 0 5px;
 }
 
-.social-svg {
+.social_svg_home {
     width: 20px;
     height: 20px;
     fill: #F9F8F4; 
+}
+
+.social_svg {
+    width: 20px;
+    height: 20px;
+    fill: #000; 
+}
+
+.footer_legacy ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.footer_legacy ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 5px;
 }
 
 /* ## Footer Ende ## */
