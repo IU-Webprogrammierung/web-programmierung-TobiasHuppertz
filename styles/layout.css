@@ -1,5 +1,5 @@
 body {
-    width: 100vw;
+    width: auto;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -7,10 +7,14 @@ body {
     flex-direction: column;
 }
 
-main.mainhome {
+main,main.mainhome {
     display: flex;
     flex: 1;
     justify-content: center;
+    align-items: start;
+}
+
+main.mainhome {
     align-items: center;
 }
 
@@ -26,8 +30,6 @@ body.bodyhome {
         background-image: url("/img/bg_desktop.jpg");
         background-size: 100% 100%;;
         background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
     }
 }
 
@@ -107,40 +109,10 @@ a.logo {
     justify-content: flex-end;
 }
 
-.search {
+.search, .hamburger_menu {
     margin: 0 5px;
     display: flex;
     align-items: center;
-}
-
-.search_svg_home {
-    width: 20px;
-    height: 20px;
-    fill: #F9F8F4; 
-}
-
-.search_svg {
-    width: 20px;
-    height: 20px;
-    fill: #000; 
-}
-
-.hamburger_menu {
-    margin: 0 5px;
-    display: flex;
-    align-items: center;
-}
-
-.hamburger_svg_home {
-    width: 20px;
-    height: 20px;
-    fill: #F9F8F4; 
-}
-
-.hamburger_svg {
-    width: 20px;
-    height: 20px;
-    fill: #000; 
 }
 
 @media screen and (min-width: 600px) {
@@ -150,11 +122,24 @@ a.logo {
     }
 }
 
+.search_svg_home, .hamburger_svg_home {
+    width: 20px;
+    height: 20px;
+    fill: #F9F8F4; 
+}
+
+.search_svg,.hamburger_svg  {
+    width: 20px;
+    height: 20px;
+    fill: #000; 
+}
+
+
 /* ## Top-Navigation Ende ## */
 
 /* ## Footer ## */
 
-footer.footermain {
+footer.footermain,footer.footerhome {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -165,13 +150,12 @@ footer.footermain {
 }
 
 footer.footerhome {
-    width: 100%;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
+}
+
+footer.footermain {
+    color: #999999;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.40);
 }
 
 @media screen and (max-width: 600px) {
@@ -222,49 +206,69 @@ footer.footerhome {
 
 /* ## Footer Ende ## */
 
+/* ## Banner ## */
+
+.banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.banner_image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    color: #999999;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.40);
+}
+
+.banner_headline {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+}
+
+
 /* ## Cards-Layout (guides.html) ## */
 
 .guide_article_wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Zentriert die Boxen horizontal */
-    align-items: center; /* Zentriert die Boxen vertikal */
+    justify-content: start;
+    align-items: center; 
     width: 100%;
-    max-width: 1300px; /* Optional: Begrenzung der maximalen Breite */
-    box-sizing: border-box;
-    border: 1px solid blue
+    max-width: 1000px;
 }
 
-/*
-.card_guide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
-    max-width: 1200px; 
-    padding: 10px; 
-    box-sizing: border-box;
-    border: 1px solid blue
-  }
-*/
 
-.card_guide_wrapper {
-    background-color: green;
-    color: white;
-    width: 400px;
-    max-width: 400px;
-    margin: 5px;
-    padding: 20px;
+.card_guide {
+    max-width: 300px;
+    width: 100%;
     text-align: center;
-    box-sizing: border-box;
-    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin: 15px;
+    position: relative;
+    color: #999999;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
   }
 
 @media (max-width: 600px) {
+    .guide_article_wrapper {
+        justify-content: center;
+    }
     .card_guide_wrapper {
         width: 100%;
     }
@@ -276,8 +280,7 @@ footer.footerhome {
     align-items: center;
     height: 240px;
     min-width: 100%;
-    max-width: 400px;
-    border: 1px black solid;
+    max-width: 300px;
     margin: 0;
   }
 
@@ -291,7 +294,6 @@ footer.footerhome {
 
 .card_guide_box {
     padding: 1rem;
-    border: 1px purple solid;
 }
 
 .card_guide_title {
