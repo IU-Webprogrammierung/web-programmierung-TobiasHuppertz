@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelBlog</title>
-</head>
-<body>
-    <header>
-        <a class="logo" href="index.html">Logo</a>
-        <nav>
-            <ul>
-                <li><a id="menu_header" href="aboutme.html">Über mich</a></li>
-                <li><a id="menu_header" href="discover.html">Entdecke</a></li>
-                <li><a id="menu_header" href="guides.html">Guides</a></li>
-            </ul>
-        </nav>
-        <div id="Search">
-            <input id="search_input" type="text" placeholder="Suche...">
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TravelBlog</title>
+        <link rel="stylesheet" href="/styles/layout.css">
+        <link rel="stylesheet" href="/styles/typography.css">
+    </head>
+    <body>
+        <header>       
+            <nav class="nav_top">
+                <a class="logo" href="index.html"></a>
+                <ul>
+                    <li><a class="menu_header" href="aboutme.html">Über mich</a></li>
+                    <li><a class="menu_header" href="discover.html">Entdecke</a></li>
+                    <li><a class="menu_header" href="guides.html">Guides</a></li>
+                </ul>
+                <div class="icon-wrapper">
+                    <div class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="search_svg" width="90" height="90" viewBox="0 0 30 30">
+                            <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                        </svg>
+                    </div>
+                    <div class="hamburger_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hamburger_svg" viewBox="0 0 50 50" width="100px" height="100px">
+                            <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"/>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+        </header>
     <main>
-        <div class="font_splash">Placeholder Text</div>
+        <div class="test_wrapper">
+            <div class="test_outterflexbox">
+                <div class="test_flexbox">
+                    <img src="img\guides\cover_cambodia_market.jpg" class="test_bild" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                    <div class="test_content">
+                            <div class="test_header">Nachtmärkte rund um Phnom Penh</div>
+                            <div class="test_text"><p>Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</p></div>
+                            <hr>
+                            <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="test_outterflexbox">
+                <div class="test_flexbox">
+                    <div class="test_bild"></div>
+                    <div class="test_content">
+                            <div class="test_header"></div>
+                            <div class="test_text"></div>
+                            <hr>
+                            <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="test_outterflexbox">
+                <div class="test_flexbox">
+                    <div class="test_bild"></div>
+                    <div class="test_content">
+                            <div class="test_header"></div>
+                            <div class="test_text"></div>
+                            <hr>
+                            <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="test_outterflexbox">
+                <div class="test_flexbox">
+                    <div class="test_bild"></div>
+                    <div class="test_content">
+                            <div class="test_header"></div>
+                            <div class="test_text"></div>
+                            <hr>
+                            <button class="guide_button" type="button">Weiterlesen</button>
+                    </div>
+                </div>
+            </div>  
     </main>
     <footer>
         <nav>

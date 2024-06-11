@@ -6,9 +6,21 @@
 /* Farb Variablen */
 :root {
     --font-color-home: #F9F8F4;
+    --font-color: #000;
 }
 
-.splash_font {
+.font_white {
+    color: var(--font-color-home);
+}
+
+.font_black {
+    color: var(--font-color);
+}
+
+
+/* Stile */
+
+.font_splash {
     font-family: "Archivo Narrow", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -17,6 +29,23 @@
     letter-spacing: 1.5px;
     text-align: center;
     color: var(--font-color-home);
+}
+
+.font_nav {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+}
+
+.font_subheader {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
 }
 
 .font_lobster_titel {
@@ -31,24 +60,4 @@
         font-size: 20px;
         font-weight: 400;
     }
-}
-
-.menu_header_home {
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    letter-spacing: 1.1px;
-    color: var(--font-color-home);
-}
-
-.menu_header {
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    letter-spacing: 1.1px;
-    color: #000;
 }
