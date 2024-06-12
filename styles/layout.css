@@ -220,7 +220,7 @@ footer.footermain {
     height: auto;
     max-height: 250px;
     color: #999999;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.40);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 .banner_headline {
@@ -265,7 +265,7 @@ footer.footermain {
     box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
   }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .guide_article_wrapper {
         justify-content: center;
     }
@@ -379,4 +379,117 @@ footer.footermain {
     height: 300px;
     width: 300px;
     background-color: aqua;
+}
+
+.test2_wrapper {
+    width: 100%;
+    max-width: 1300px;
+    border: 1px salmon solid;  
+}
+
+.test2_gallery_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 450px;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.test2-img_wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.test2_gallery_col {
+    width: 33.3%;
+    height: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.test2_mid_top {
+    position: relative;
+    width: 100%;
+    height: calc(60% - 3.5px);
+    margin-bottom: 7px;
+}
+
+.test2_mid_down {
+    position: relative;
+    width: 100%;
+    height: calc(40% - 3.5px);
+    margin-top: 7px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.test2_mid_down_l, .test2_mid_down_r {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.test2_mid_down_l {
+    margin-right: 7px;
+}
+
+.test2_mid_down_r {
+    margin-left: 7px;
+}
+
+.test2_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.test2-img_gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7287115529805672) 0%, rgba(0,0,0,0.7175070711878502) 11%, rgba(0,0,0,0) 40%); 
+    z-index: 2;
+    pointer-events: none;
+}
+
+.test2_img_text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%; 
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+@media (max-width: 600px) {
+    .test2_gallery_wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .test2_gallery_col {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    
+    .test2_img {
+        width: 90%;
+        height: 300px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    .test2_mid_top, .test2_mid_down, .test2_mid_down_l, .test2_mid_down_r {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin: 0px;
+    }
+
 }
