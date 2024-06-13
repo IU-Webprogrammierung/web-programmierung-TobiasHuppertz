@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie mit zentriertem Overlay</title>
+    <style>
+        .test2_gallery_wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .test2_gallery_col {
+            flex: 1;
+            padding: 10px;
+            position: relative;
+        }
+
+        .test2-img_wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .test2_img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .test2-img_gradient {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(128, 128, 128, 0.7); /* Grau mit 70% Transparenz */
+            padding: 10px;
+            text-align: center;
+            color: white;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 600px) {
+            .test2_gallery_wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .test2_gallery_col {
+                width: 100%;
+                height: auto;
+                padding: 0;
+                border: 1px blue solid;
+            }
+            
+            .test2_img {
+                width: 90%;
+                height: 300px;
+                margin: 10px auto;
+                display: block;
+            }
+
+            .test2-img_gradient {
+                width: 90%; 
+            }
+            
+            .test2_mid_top, .test2_mid_down, .test2_mid_down_l, .test2_mid_down_r {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="test2_gallery_wrapper">
+        <div class="test2_gallery_col">
+            <div class="test2-img_wrapper">
+                <img src="img/discover/cover_kuba.jpg" class="test2_img">
+                <div class="test2-img_gradient">
+                    <p>Kuba</p>
+                </div>
+            </div>
+        </div>
+        <div class="test2_gallery_col">
+            <div class="test2_mid_top">
+                <img src="img/discover/cover_indonesia.jpg" class="test2_img">
+                <div class="test2-img_gradient">
+                    <p>Indonesien</p>
+                </div>
+            </div>
+            <div class="test2_mid_down">
+                <div class="test2_mid_down_l">
+                    <img src="img/discover/cover_usa.jpg" class="test2_img">
+                    <div class="test2-img_gradient">
+                        <p>USA</p>
+                    </div>
+                </div>
+                <div class="test2_mid_down_r">
+                    <img src="img/discover/cover_usa.jpg" class="test2_img">
+                    <div class="test2-img_gradient">
+                        <p>USA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="test2_gallery_col">
+            <div class="test2-img_wrapper">
+                <img src="img/discover/cover_dublin.jpg" class="test2_img">
+                <div class="test2-img_gradient">
+                    <p>Dublin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
