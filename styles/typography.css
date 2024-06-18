@@ -7,7 +7,7 @@
 :root {
     --font-color-home: #F9F8F4;
     --font-color: #000;
-    --font-color-gay: #999999;
+    --font-color-gray: #999999;
 }
 
 .font_white {
@@ -19,7 +19,7 @@
 }
 
 .font_gray {
-    color: var(--font-color-gay)
+    color: var(--font-color-gray)
 }
 
 /* Stile */
@@ -47,9 +47,9 @@
 .font_body{
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 14px;  
+    font-size: 16px;  
 }
 
 .font_sans_h3
@@ -66,7 +66,7 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 1.2px;
 }
 
