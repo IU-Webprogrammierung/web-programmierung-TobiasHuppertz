@@ -4,43 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBlog</title>
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/typography.css">
 </head>
 <body>
-    <header>
-        <a id="logo" href="\index.html">Logo</a>
-        <nav>
+    <header>       
+        <nav class="nav_top">
+            <a class="logo" href="../index.html"></a>
             <ul>
-                <li><a id="menu_header" href="\aboutme.html">Über mich</a></li>
-                <li><a id="menu_header" href="\discover.html">Entdecke</a></li>
-                <li><a id="menu_header" href="\guides.html">Guides</a></li>
+                <li><a class="menu_header font_nav font_black" href="../aboutme.html">Über mich</a></li>
+                <li><a class="menu_header font_nav font_black" href="../discover.html">Entdecke</a></li>
+                <li><a class="menu_header font_nav font_black" href="../guides.html">Guides</a></li>
             </ul>
+            <div class="icon-wrapper">
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search_svg" width="90" height="90" viewBox="0 0 30 30">
+                        <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                    </svg>
+                </div>
+                <div class="hamburger_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hamburger_svg" viewBox="0 0 50 50" width="100px" height="100px">
+                        <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"/>
+                    </svg>
+                </div>
+            </div>
         </nav>
-        <div id="Search">
-            <input id="search_input" type="text" placeholder="Suche...">
+        <div class="banner">
+            <img src="/img/banner/indonesia/banner_indonesia.JPG" class="banner_image">
+            <h2 class="banner_headline font_lobster_titel">Indonesien</h2>
         </div>
     </header>
     <main>
-        <div class="font_banner_header">Indonesien</div>
-        <nav>
-            <ul>
-                <li><a id="nav_breadcrumbs" href="\discover.html">Entdecke</a></li>
-                <li><a id="nav_breadcrumbs" href="..\indonesia.html">Indonesien</a></li>
-                <li>Bromo</li>
-            </ul>
-        </nav>
-        <div class="font_story_header">Nächster Halt, Bromo!</div>
-        <img src="\img\discover\indonesia\wonokitri_signs.JPG" class="guide_img" alt="Wegweiser mit dem Hinweis Bromo Backpacker" width="600" height="400">
-        <div class="font_story_text">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java. Mit einer Höhe von 2329 Metern ist er der jüngste Krater des Tengger-Vulkan-Massivs und einer der aktivsten Vulkane auf Java.</div>
-        <div class="font_story_text">Wenn ihr den Bromo auf eigene Faust erklimmen möchtet, empfehle ich, eine Unterkunft in einem der vielen Bergdörfer zu suchen. Die Reise ist anspruchsvoll und sollte daher nicht unterschätzt werden. Wir haben uns für das Bromo Backpacker Tosari in Wonokitri entschieden. Von hier aus könnt ihr den Vulkan in einem Tagesmarsch erreichen. Das kleine Dorf ist bereits eine Sehenswürdigkeit, da die Häuser farbenfroh gestrichen sind und auf den vielen Mauern und Wänden Streetart zu finden ist!</div>
-        <img src="\img\discover\indonesia\wonokitri_homes.JPG" class="guide_img" alt="Farbenfrohe Häuser an einem Berghang" width="600" height="400">
-        <img src="\img\discover\indonesia\wonokitri_arts.JPG" class="guide_img" alt="Thor-Comic-Figur auf einer Wand als Streetart" width="600" height="400">
-        <div class="font_story_text">Es ist lohnenswert, sich bereits frühmorgens auf den Weg zu machen, bevor die Sonne aufgeht. Denn von der Plattform “Lautan Pasir Bromo” aus habt ihr einen der besten Ausblicke auf den Vulkan, während die Sonne im Hintergrund aufgeht!</div>
-        <img src="\img\discover\indonesia\bromo_sunrise.JPG" class="guide_img" alt="Sonnenaufgang in der Nähe des Bromos" width="600" height="400">
-        <img src="\img\discover\indonesia\bromo.JPG" class="guide_img" alt="Der Bromo umhüllt von Nebel" width="600" height="400">
-        <div class="font_story_text">Von der Plattform aus findet ihr einen Weg, der euch zum Krater führt. Um den Krater zu erreichen, müsst ihr durch den "Sea of Sand" schreiten, der einer Wüste ähnelt. Vom Kraterrand aus könnt ihr den aktiven Vulkan beobachten</div>
-        <img src="\img\discover\indonesia\bromo_wayup.JPG" class="guide_img" alt="Sandiger Aufsteig zum Kraterrand" width="600" height="400">
-        <img src="\img\discover\indonesia\bromo_crater.JPG" class="guide_img" alt="Rauch steigt aus dem Kraterloch hinaus" width="600" height="400">
-    </main>
+        <div class="guide_article_wrapper">
+            <nav>
+                <ul>
+                    <li><a id="nav_breadcrumbs" href="\discover.html">Entdecke</a></li>
+                    <li><a id="nav_breadcrumbs" href="..\indonesia.html">Indonesien</a></li>
+                    <li>Bromo</li>
+                </ul>
+            </nav>
+            <div class="font_story_header">Nächster Halt, Bromo!</div>
+            <img src="\img\discover\indonesia\wonokitri_signs.JPG" class="guide_img" alt="Wegweiser mit dem Hinweis Bromo Backpacker" width="600" height="400">
+            <div class="font_story_text">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java. Mit einer Höhe von 2329 Metern ist er der jüngste Krater des Tengger-Vulkan-Massivs und einer der aktivsten Vulkane auf Java.</div>
+            <div class="font_story_text">Wenn ihr den Bromo auf eigene Faust erklimmen möchtet, empfehle ich, eine Unterkunft in einem der vielen Bergdörfer zu suchen. Die Reise ist anspruchsvoll und sollte daher nicht unterschätzt werden. Wir haben uns für das Bromo Backpacker Tosari in Wonokitri entschieden. Von hier aus könnt ihr den Vulkan in einem Tagesmarsch erreichen. Das kleine Dorf ist bereits eine Sehenswürdigkeit, da die Häuser farbenfroh gestrichen sind und auf den vielen Mauern und Wänden Streetart zu finden ist!</div>
+            <img src="\img\discover\indonesia\wonokitri_homes.JPG" class="guide_img" alt="Farbenfrohe Häuser an einem Berghang" width="600" height="400">
+            <img src="\img\discover\indonesia\wonokitri_arts.JPG" class="guide_img" alt="Thor-Comic-Figur auf einer Wand als Streetart" width="600" height="400">
+            <div class="font_story_text">Es ist lohnenswert, sich bereits frühmorgens auf den Weg zu machen, bevor die Sonne aufgeht. Denn von der Plattform “Lautan Pasir Bromo” aus habt ihr einen der besten Ausblicke auf den Vulkan, während die Sonne im Hintergrund aufgeht!</div>
+            <img src="\img\discover\indonesia\bromo_sunrise.JPG" class="guide_img" alt="Sonnenaufgang in der Nähe des Bromos" width="600" height="400">
+            <img src="\img\discover\indonesia\bromo.JPG" class="guide_img" alt="Der Bromo umhüllt von Nebel" width="600" height="400">
+            <div class="font_story_text">Von der Plattform aus findet ihr einen Weg, der euch zum Krater führt. Um den Krater zu erreichen, müsst ihr durch den "Sea of Sand" schreiten, der einer Wüste ähnelt. Vom Kraterrand aus könnt ihr den aktiven Vulkan beobachten</div>
+            <img src="\img\discover\indonesia\bromo_wayup.JPG" class="guide_img" alt="Sandiger Aufsteig zum Kraterrand" width="600" height="400">
+            <img src="\img\discover\indonesia\bromo_crater.JPG" class="guide_img" alt="Rauch steigt aus dem Kraterloch hinaus" width="600" height="400">
+        </main>
+    </div>
     <footer>
         <nav>
             <ul>
