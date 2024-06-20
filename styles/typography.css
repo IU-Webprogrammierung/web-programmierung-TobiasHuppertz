@@ -115,3 +115,12 @@
     font-size: 16px;
     text-transform: uppercase;
 }
+
+.font_open-sans_h4{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
