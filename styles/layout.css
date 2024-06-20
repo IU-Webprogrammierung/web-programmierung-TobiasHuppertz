@@ -330,6 +330,15 @@ footer.footermain {
     z-index: 2;
 }
 
+/* ## Headlines ## */
+
+ .headline_display {
+        width: 90%;
+        border-bottom: 3px grey solid;
+        padding-bottom: 10px;
+        margin-left: 15px;
+ }
+
 /* ## Cards-Layout (guides.html) ## */
 
 .guide_article_wrapper {
@@ -345,6 +354,7 @@ footer.footermain {
 .card_guide {
     max-width: 300px;
     width: 100%;
+    height: auto;
     text-align: center;
     align-items: center;
     display: flex;
@@ -364,9 +374,6 @@ footer.footermain {
 }
 
 .card_guide_figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 240px;
     min-width: 100%;
     max-width: 300px;
@@ -383,17 +390,24 @@ footer.footermain {
 
 .card_guide_box {
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 .card_guide_title {
     margin: 0px;
-    height: 40px; /* Klärung */
+    height: 3.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
 }
 
 
 .card_guide_body {
     text-align: left;
-    margin-bottom: 1.25rem;    
+    margin-bottom: 2.25rem;    
+    height: 4.6rem;
     font-weight: 400;
     max-width: 350px;
     display: -webkit-box;
@@ -418,9 +432,7 @@ footer.footermain {
 
 a.card_guide_button {
     border: 1px solid rgba(27, 31, 35, 0.15);
-    border-radius: 6px;
     box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    box-sizing: border-box;
     color: #24292E;
     cursor: pointer;
     text-decoration: none;
@@ -428,10 +440,15 @@ a.card_guide_button {
     position: relative;
 }
 
+a.card_guide_button:hover {
+    border: 3px solid rgba(27, 31, 35, 0.15);
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.2);
+    transition: 0.2s ease-out;
+}
+
 hr.card_guide_line {
     border-top: 1px solid #bbb;
     border-radius: 20px;
-    margin: 15px;
 }
 
 
@@ -599,7 +616,6 @@ hr.card_guide_line {
 
 .article_text_body {
     width: 90%;
-    padding: 0;
     margin: 0 auto;
     display:block;
 }
