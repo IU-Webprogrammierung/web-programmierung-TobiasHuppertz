@@ -417,19 +417,6 @@ footer.footermain {
     text-overflow: ellipsis;
 }
 
-/* ggfs. löschen */
-.guide_button, .guide_button {
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 a.card_guide_button {
     border: 1px solid rgba(27, 31, 35, 0.15);
     box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
@@ -679,49 +666,5 @@ hr.card_guide_line {
         bottom: -100px;
     }
 }    
-
-/* ### Testing ### */
-.test_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
-    max-width: 1000px;  
-}
-
-.test_outterflexbox {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 1px solid blue;
-    justify-content: start;
-    align-items: start;
-    margin-bottom: 20px;
-}
-
-.test_outterflexbox:nth-child(even) {
-    justify-content: end;
-    align-items: end;
-}
-
-.test_flexbox{
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid salmon;
-}
-
-.test_bild {
-    height: 300px;
-    width: 300px;
-    background-color: green;
-}
-
-.test_content {
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
-}
 
 
