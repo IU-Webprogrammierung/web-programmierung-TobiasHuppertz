@@ -165,7 +165,9 @@ a.logo {
 
 @media screen and (min-width: 600px) {
 
-    .hamburger_menu {
+    .hamburger_menu,
+    .hamburger_line
+    {
         display: none;
     }
 }
@@ -698,3 +700,32 @@ hr.card_guide_line {
 
 /* ### Testing ## */
 
+
+div.hamburger_menu {
+    width: 20px;
+    height: 40px;
+    position: relative; 
+    cursor: pointer;
+}
+
+.hamburger_line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--font-color-home);
+    transition: 0.5s;
+}
+
+.hamburger_line:nth-child(1) { top: 12px; }
+.hamburger_line:nth-child(2) { top: 20px; }
+.hamburger_line:nth-child(3) { top: 28px; }
+
+.hamburger_menu.move .hamburger_line:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+}
+.hamburger_menu.move .hamburger_line:nth-child(2) {
+    opacity: 0;
+}
+.hamburger_menu.move .hamburger_line:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+}
