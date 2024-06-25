@@ -74,6 +74,7 @@ a.logo {
     display: none;
 }
 
+
 /* Einblenden des Desktop-Menüs */
 @media screen and (min-width: 600px) {
 
@@ -113,6 +114,43 @@ a.logo {
 .menu_header:hover::after,.menu_header_home:hover::after,.footer_legal:hover::after {
     transform: scaleX(1);
 }
+
+
+@media screen and (max-width: 600px) {
+    .nav_menu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 50px);
+        background-color: rgba(0,0,0,0.7);
+        transition: 0.5s all ease;
+        align-items: center;
+        display: none;
+        transform: translateX(-800px);
+    }
+
+    .nav_top ul{
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_top ul li {
+        display: block;
+        list-style-type: none;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav_menu.show {
+        transform: translateX(0px);
+        transition: 0.5s all ease;
+      }
+}    
+
 
 .nav_top .icon-wrapper {
     display: flex;
