@@ -8,21 +8,20 @@ body {
     flex-direction: column;
 }
 
-main,main.mainhome {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: start;
-}
-
-main.mainhome {
-    align-items: center;
-}
-
 body.bodyhome {
     background-image: url("/img/bg_mobile.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+main.mainhome {
+    align-items: center;
 }
 
 .bg_white {
@@ -459,19 +458,29 @@ hr.card_guide_line {
         flex-wrap: wrap;
 }
 
+.gallery_left, 
+.gallery_right,
+.gallery_top,
+.gallery_btm_l,
+.gallery_btm_r {
+    width: 100%;    
+}
+
 
 .discover_gallery_wrapper4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 450px;
+    height: auto;
     width: 100%;
     margin-bottom: 60px;
 }
 
+/*
 .discover_gallery_wrapper4 {
     height: 350px;
 }
+*/
 
 .discover_img_wrapper {
     position: relative;
