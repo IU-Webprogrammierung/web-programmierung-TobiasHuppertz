@@ -339,8 +339,7 @@ footer.footermain {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
-    width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 
@@ -450,7 +449,7 @@ hr.card_guide_line {
 
 .discover_content_wrapper {
     width: 100%;
-    max-width: 1300px; 
+    max-width: 1200px; 
 }
 
 .gallery_grid {
