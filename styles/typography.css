@@ -1,6 +1,5 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -23,17 +22,18 @@
     color: var(--font-color-gray)
 }
 
-/* Stile */
+/* ###### */
 
-.font_splash {
-    font-family: "Archivo Narrow", sans-serif;
+h1, h2, h3, h4 {
+    font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 28px;
-    letter-spacing: 1.5px;
-    text-align: center;
-    color: var(--font-color-home);
+    font-weight: 400;
+}
+
+p, a {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 
 .font_nav {
@@ -42,49 +42,9 @@
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
-    letter-spacing: 1.1px;
 }
 
-.font_body{
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px; 
-}
-
-.font_lh_15 {
-    line-height: 1.5em;
-}
-
-.font_sans_h2
-{
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;   
-}
-
-.font_sans_h3
-{
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;   
-}
-
-.font_narrow_h2{
-    font-family: "Archivo Narrow", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.3rem;
-    letter-spacing: 1.2px;
-}
-
-.font_subheader {
+.font_footer {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -92,63 +52,89 @@
     font-size: 12px;
 }
 
-.font_lobster_titel {
+.font_banner {
     font-family: "Lobster", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 32px;
-  }
-
-  @media (max-width: 600px) {
-    .font_lobster_titel {
-        font-size: 20px;
-        font-weight: 400;
-    }
-}
-
-
-.font_open-sans_h0{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 46px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.font_open-sans_h1{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 32px;
-    text-transform: uppercase;
-}
-
-.font_open-sans_h2{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-.font_open-sans_h3{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.font_open-sans_h4{
-    font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
     font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Medium */
+
+.font_m {
+    font-weight: 500;
+}
+
+/* Semi-Bold */
+.font_sb {
+    font-weight: 600;
+}
+
+/* Bold */
+.font_b {
+    font-weight: 700;
+}
+
+/* Extra bold */
+
+.font_xb {
+    font-weight: 800;
+}
+
+/* Letter Spacing */
+
+.font_ls_11 {
+    letter-spacing: 1.1px;
+}
+
+.font_ls_15 {
+    letter-spacing: 1.5px;
+}
+
+/* Line Height */
+
+.font_lh_15 {
+    line-height: 1.5em;
+}
+
+/* Transform */
+
+.font_uc {
     text-transform: uppercase;
+}
+
+/* Shadow */
+
+.font_sh {
+    text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+}
+
+/* Queries */
+
+@media (max-width: 600px) {
+    .font_banner {
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
