@@ -137,4 +137,12 @@ p {
         font-size: 20px;
         font-weight: 400;
     }
+
+    .article_banner_headline {
+        font-size: 22px;
+    }
+
+    .article_banner_subheadline {
+        font-size: 14px;
+    }
 }

@@ -176,7 +176,8 @@
     .article_section_wrapper{
         display: flex;
         flex-direction: row-reverse;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
+        margin-top: 5%;
     }
 
     .article_section_wrapper:nth-child(odd) {
@@ -189,6 +190,18 @@
     }
 
     .article_img_small {
-        bottom: -100px;
+        bottom: -120px;
+        width: 40%;
+        height: 170px;
+    }
+
+    .article_banner_headline {
+        top: 20%;
+        left: 18%;
+}
+
+    .article_banner_subheadline {
+        bottom: 30%;
+        left: 18%;
     }
 }   
