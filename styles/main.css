@@ -128,22 +128,21 @@ div.hamburger_menu {
     align-items: center;
 }
 
-nav.nav_breadcrumbs_wrapper{
+nav.nav_breadcrumbs_wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: start;
-    width: 90%;
+    width: 100%;
+    margin: 0;
 }
 
 ul.nav_breadcrumbs {
-    padding: 5px 0px;
+    padding: 0px 20px;
     list-style: none;
 }
 
 ul.nav_breadcrumbs li {
     display: inline;
-    font-size: 14px;
-    font-weight: 600;
 }
 
 ul.nav_breadcrumbs li+li:before {
@@ -151,13 +150,11 @@ ul.nav_breadcrumbs li+li:before {
 }
 
 ul.nav_breadcrumbs li a {
-    color: var(--font-color-gray);
     text-decoration: none;
 }
 
 ul.nav_breadcrumbs li a:hover {
-color: var(--font-color);
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -322,6 +319,7 @@ footer.footermain {
 .headline_display {
     margin-left: 15px;
     white-space: nowrap; 
+    
 }
 
 .headline_text {
