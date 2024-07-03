@@ -204,4 +204,8 @@
         bottom: 30%;
         left: 18%;
     }
+
+    .article_img_solo {
+        width: 50%;
+    }
 }   
