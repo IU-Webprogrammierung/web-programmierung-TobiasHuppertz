@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBlog</title>
+    <link rel="stylesheet" href="/styles/main_tail.css">
+    <link rel="stylesheet" href="/styles/query_tail.css">
+    <link rel="stylesheet" href="/styles/typography.css">
+    <link rel="stylesheet" href="/styles/output.css">
+    <link rel="stylesheet" href="/styles/animation.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="w-auto h-screen m-0 p-0 flex flex-col bg-cover bg-center bg-no-repeat bodybackground">
+<header class="py-2 px-0 overflow-hidden flex justify-between items-center">
+    <nav class="flex justify-between items-center w-full">
+        <a href="index.html" class="inline-block bg-[url('/img/sys/logo_white.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
+        <ul class="hidden md:flex m-0 p-0 justify-center items-center">
+            <li class="inline-block list-none px-3.5">
+                <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="">
+                    Über mich
+                </a>
+            </li>
+            <li class="inline-block list-none px-3.5">
+                <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="discover.html">
+                    Entdecke
+                </a>
+            </li>
+            <li class="inline-block list-none px-3.5">
+                <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="guides.html">
+                    Guides
+                </a>
+            </li>
+        </ul>
+        <div class="flex justify-end">
+            <div class="flex items-center mx-1.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-[#F9F8F4]" viewBox="0 0 30 30">
+                    <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                </svg>
+            </div>
+            <div class="hamburger_menu w-5 h-10 relative cursor-pointer mx-1.5 md:hidden">
+                <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[13px]"></span>
+                <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[20px]"></span>
+                <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[27px]"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main class="flex-grow flex items-center justify-center">
+        <h1 class="font_m font_ls_15 font_white">Let your life be a journey.</h1>    
+    </main>
+    <footer class="w-full flex items-center py-5 relative bottom-0 justify-center md:justify-end">
+        <nav class="flex justify-center">
+            <ul class="m-0 p-0 flex justify-center">
+                <li class="inline-block list-none px-1.5">
+                    <a href="https://facebook.com" class="mx-1.5" target="_blank">
+                        <svg class="w-5 h-5 fill-current text-[#F9F8F4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="inline-block list-none px-1.5">
+                    <a href="https://instagram.com" class="mx-1.5" target="_blank">
+                        <svg class="w-5 h-5 fill-current text-[#F9F8F4]" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="inline-block list-none px-1.5">
+                    <a href="https://tiktok.com" class="mx-1.5" target="_blank">
+                        <svg class="w-5 h-5 fill-current text-[#F9F8F4]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"/>
+                        </svg>
+                    </a>
+                </li>       
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
