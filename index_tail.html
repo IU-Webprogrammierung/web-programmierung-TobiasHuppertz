@@ -12,40 +12,40 @@
     <script src="js/script.js" defer></script>
 </head>
 <body class="w-auto h-screen m-0 p-0 flex flex-col bg-cover bg-center bg-no-repeat bodybackground">
-<header class="py-2 px-0 overflow-hidden flex justify-between items-center">
-    <nav class="flex justify-between items-center w-full">
-        <a href="index.html" class="inline-block bg-[url('/img/sys/logo_white.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
-        <ul class="hidden md:flex m-0 p-0 justify-center items-center">
-            <li class="inline-block list-none px-3.5">
-                <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="">
-                    Über mich
-                </a>
-            </li>
-            <li class="inline-block list-none px-3.5">
-                <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="discover.html">
-                    Entdecke
-                </a>
-            </li>
-            <li class="inline-block list-none px-3.5">
-                <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="guides.html">
-                    Guides
-                </a>
-            </li>
-        </ul>
-        <div class="flex justify-end">
-            <div class="flex items-center mx-1.5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-[#F9F8F4]" viewBox="0 0 30 30">
-                    <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
-                </svg>
+    <header class="py-2 px-0 overflow-hidden flex justify-between items-center">
+        <nav class="flex justify-between items-center w-full">
+            <a href="index.html" class="inline-block bg-[url('/img/sys/logo_white.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
+            <ul class="hidden md:flex m-0 p-0 justify-center items-center">
+                <li class="inline-block list-none px-3.5">
+                    <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="">
+                        Über mich
+                    </a>
+                </li>
+                <li class="inline-block list-none px-3.5">
+                    <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="discover.html">
+                        Entdecke
+                    </a>
+                </li>
+                <li class="inline-block list-none px-3.5">
+                    <a class="relative top-0 no-underline font_nav font_ls_11 font_white after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100" href="guides.html">
+                        Guides
+                    </a>
+                </li>
+            </ul>
+            <div class="flex justify-end">
+                <div class="flex items-center mx-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-[#F9F8F4]" viewBox="0 0 30 30">
+                        <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                    </svg>
+                </div>
+                <div class="hamburger_menu w-5 h-10 relative cursor-pointer mx-1.5 md:hidden">
+                    <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[13px]"></span>
+                    <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[20px]"></span>
+                    <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[27px]"></span>
+                </div>
             </div>
-            <div class="hamburger_menu w-5 h-10 relative cursor-pointer mx-1.5 md:hidden">
-                <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[13px]"></span>
-                <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[20px]"></span>
-                <span class="absolute h-0.5 w-full bg-white rounded-sm transition duration-500 top-[27px]"></span>
-            </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <main class="flex-grow flex items-center justify-center">
         <h1 class="font_m font_ls_15 font_white">Let your life be a journey.</h1>    
     </main>
