@@ -287,7 +287,7 @@ footer.footermain {
 }
 
 /* ## Headlines ## */
- 
+/*
 
 .headline_wrapper {
     display: flex;
@@ -309,10 +309,10 @@ footer.footermain {
     margin-bottom: 32px;
     margin-left: 15px;
 }
-
+ */
 
 /* ## Cards-Layout (guides.html) ## */
-
+/*
 .guide_article_wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -400,10 +400,10 @@ hr.card_guide_line {
     border-radius: 20px;
 }
 
-
+*/
 
 /* ### Discover.html ## */
-
+/*
 .nav_tab {
     overflow: hidden;
     display: flex;
@@ -491,7 +491,7 @@ hr.card_guide_line {
         object-fit: cover;
     }
     
-
+*/
 
 /* ## Articles ## */
 

@@ -46,57 +46,60 @@
             </h2>
         </figure>
     </header>
-    <main class="flex-grow flex items-center justify-center">
-        <div class="flex flex-wrap justify-start items-center max-w-screen-xl mx-auto">
-            <div class="flex items-start border-b-4 border-gray-500 w-full mb-8">
-                <h1 class="font_sb font_lh_15 font_uc font_black text-3xl ml-4 whitespace-nowrap">Guides</h1>
-                <p class="whitespace-nowrap self-end mb-8 ml-4 text-lg">Durchsuche nützliche Ratgeber</p>
-            </div>
-            <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
-                <figure class="w-full h-60 mb-4">
-                    <img src="img/guides/cover_cambodia_market.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
-                </figure>
-                <div class="p-4 pb-8">
-                    <h3 class="font_b font_uc mb-2 h-14 overflow-hidden line-clamp-2">Nachtmärkte rund um Phnom Penh</h3>
-                    <hr class="border-t border-gray-400 rounded-full mb-4">
-                    <section class="text-left mb-9 h-20 overflow-hidden line-clamp-3">Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</section>
-                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
+    <main>
+        <div class="w-full max-w-7xl mx-auto">
+            <nav class="overflow-hidden flex justify-center items-center w-full">
+                <ul class="w-full py-12 flex justify-center items-center">
+                    <li class="list-none mx-2"><a class="text-gray-500 font-medium">Alle</a></li>
+                    <li class="list-none mx-2"><a class="font-medium">Europa</a></li>
+                    <li class="list-none mx-2"><a class="font-medium">Amerika</a></li>
+                    <li class="list-none mx-2"><a class="font-medium">Asien</a></li>
+                </ul>
+            </nav>
+            <div class="grid grid-cols-6 grid-rows-2 gap-x-2.5 gap-y-2.5 mb-10 px-2">
+                <div class="gallery_left col-span-2 row-span-2">
+                    <div class="relative w-full h-full">
+                        <img src="img/discover/cover_kuba.jpg" class="discover_img w-11/12 h-72 mx-auto my-2 block object-cover sm:w-full sm:h-full">
+                        <div class="absolute bottom-0 left-1/20 w-11/12 h-1/5 mx-auto my-5 flex justify-center items-end bg-gradient-to-t from-black/80 via-black/50 to-black/10 transition-height duration-350 ease-out pointer-events-none sm:w-full sm:h-1/3 sm:left-0 sm:my-0">
+                            <h4 class="font_uc font_white uppercase">Kuba</h4>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
-                <figure class="card_guide_figure w-full h-60 mb-4">
-                    <img src="img/guides/cover_angkor_wat.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
-                </figure>
-                <div class="p-4 pb-8">
-                    <h3 class="font_b font_uc mb-2 h-14  line-clamp-2">Must-sees im Angkor Wat</h3>
-                    <hr class="border-t border-gray-400 rounded-full mb-4">
-                    <section class="text-left mb-9 h-20 line-clamp-3">Angkor Wat, die bekannteste Tempelanlage in der Region Angkor, ist ein architektonisches Meisterwerk und ein Symbol für Kambodscha...</section>
-                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
+                <div class="col-span-2 row-span-1">
+                    <div class="relative w-full h-full">
+                        <a href="discover/indonesia.html">
+                            <img src="img/discover/cover_indonesia.jpg" class="discover_img w-11/12 h-72 mx-auto my-2 block object-cover sm:w-full sm:h-full">
+                            <div class="discover_img_gradient absolute bottom-0 left-1/20 w-11/12 h-1/5 mx-auto my-5 flex justify-center items-end bg-gradient-to-t from-black/80 via-black/50 to-black/10 transition-height duration-350 ease-out pointer-events-none sm:w-full sm:h-1/3 sm:left-0 sm:my-0">
+                                <h4 class="font_uc font_white uppercase">Indonesien</h4>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </article>
-            <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
-                <figure class="w-full h-60 mb-4">
-                    <img src="img/guides/cover_cuba_beaches.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
-                </figure>
-                <div class="p-4 pb-8">
-                    <h3 class="font_b font_uc mb-2 h-14 line-clamp-2">Die schönsten Strände Kubas</h3>
-                    <hr class="border-t border-gray-400 rounded-full mb-4">
-                    <section class="text-left mb-9 h-20 line-clamp-3">Kuba ist ein Paradies für Strandliebhaber, und seine Küsten bieten einige der schönsten Strände der Welt. Hier sind meine Top 3 Empfehlungen...</section>
-                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
+                <div class="col-span-1 row-span-1">
+                    <div class="relative w-full h-full">
+                        <img src="img/discover/cover_usa.jpg" class="discover_img w-11/12 h-72 mx-auto my-2 block object-cover sm:w-full sm:h-full">
+                        <div class="discover_img_gradient absolute bottom-0 left-1/20 w-11/12 h-1/5 mx-auto my-5 flex justify-center items-end bg-gradient-to-t from-black/80 via-black/50 to-black/10 transition-height duration-350 ease-out pointer-events-none sm:w-full sm:h-1/3 sm:left-0 sm:my-0">
+                            <h4 class="font_uc font_white uppercase">USA</h4>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
-                <figure class="w-full h-60 mb-4">
-                    <img src="img/guides/cover_hoian_tipps.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
-                </figure>
-                <div class="p-4 pb-8">
-                    <h3 class="font_b font_uc mb-2 h-14 overflow-hidden line-clamp-2">Die besten Aktivitäten in Hoi An</h3>
-                    <hr class="border-t border-gray-400 rounded-full mb-4">
-                    <section class="text-left mb-9 h-20 overflow-hidden line-clamp-3">Hoi An, eine antike Stadt in Vietnam, ist ein wahrer Traum für Reisende. Hier sind einige der besten Aktivitäten, die du in Hoi An erleben kannst...</section>
-                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
+                <div class="col-span-1 row-span-1">
+                    <div class="discover_img_wrapper relative w-full h-full">
+                        <img src="img/discover/cover_italy.JPG" class="discover_img w-11/12 h-72 mx-auto my-2 block object-cover sm:w-full sm:h-full">
+                        <div class="discover_img_gradient absolute bottom-0 left-1/20 w-11/12 h-1/5 mx-auto my-5 flex justify-center items-end bg-gradient-to-t from-black/80 via-black/50 to-black/10 transition-height duration-350 ease-out pointer-events-none sm:w-full sm:h-1/3 sm:left-0 sm:my-0">
+                            <h4 class="font_uc font_white uppercase">Italien</h4>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </div>                       
+                <div class="col-span-2 row-span-2">
+                    <div class="relative w-full h-full">
+                        <img src="img/discover/cover_dublin.jpg" class="discover_img w-11/12 h-72 mx-auto my-2 block object-cover sm:w-full sm:h-full">
+                        <div class="absolute bottom-0 left-1/20 w-11/12 h-1/5 mx-auto my-5 flex justify-center items-end bg-gradient-to-t from-black/80 via-black/50 to-black/10 transition-height duration-350 ease-out pointer-events-none sm:w-full sm:h-1/3 sm:left-0 sm:my-0">
+                            <h4 class="font_uc font_white uppercase">Dublin</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>     
     </main>
     <footer class="bg-white flex justify-between items-center py-5 px-4 shadow-md">
         <nav class="flex space-x-4">
