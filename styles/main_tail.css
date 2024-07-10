@@ -106,7 +106,7 @@ div.hamburger_menu {
     align-items: center;
 }
 */
-
+/*
 nav.nav_breadcrumbs_wrapper {
     display: flex;
     justify-content: flex-start;
@@ -135,7 +135,7 @@ ul.nav_breadcrumbs li a {
 ul.nav_breadcrumbs li a:hover {
     text-decoration: underline;
 }
-
+*/
 
 /* ## Top-Navigation Ende ## */
 
@@ -237,6 +237,8 @@ footer.footermain {
     width: auto;
 }
 */
+
+/*
 .article_banner {
     position: relative;
     width: 100%;
@@ -494,7 +496,7 @@ hr.card_guide_line {
 */
 
 /* ## Articles ## */
-
+/*
 .article_text_body {
     width: 90%;
     margin: 0 auto;
