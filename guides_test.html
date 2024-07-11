@@ -27,63 +27,96 @@
                 </li>
             </ul>
             <div class="flex justify-end">
-                <div class="flex items-center mx-1.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current text-black" viewBox="0 0 30 30">
+                <!-- Suche -->
+                <div class="relative flex items-center mx-1.5 sm:hidden">
+                    <input type="text" autocomplete="off"
+                           class="rounded-md text-gray-800 p-1 w-0 focus:bg-white focus:flex-1 focus:pr-12 transition-all duration-500 transform focus:w-64">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-2 h-5 w-5 text-black fill-current" viewBox="0 0 30 30">
                         <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
                     </svg>
+                </div>            
+                <!-- Hamburger Menu -->
+                <div class="hamburger_menu relative w-5 h-10 cursor-pointer sm:hidden">
+                    <span class="hamburger_line absolute w-full h-[1.4px] bg-black rounded-[0.5px] transition duration-500 top-[13px]"></span>
+                    <span class="hamburger_line absolute w-full h-[1.4px] bg-black rounded-[0.5px] transition duration-500 top-[20px]"></span>
+                    <span class="hamburger_line absolute w-full h-[1.4px] bg-black rounded-[0.5px] transition duration-500 top-[27px]"></span>
                 </div>
-                <div class="hamburger_menu w-5 h-10 relative cursor-pointer mx-1.5 md:hidden">
-                    <span class="absolute h-0.5 w-full bg-black rounded-sm transition duration-500 top-[13px]"></span>
-                    <span class="absolute h-0.5 w-full bg-black rounded-sm transition duration-500 top-[20px]"></span>
-                    <span class="absolute h-0.5 w-full bg-black rounded-sm transition duration-500 top-[27px]"></span>
-                </div>
+                <div class="nav_menu fixed top-[60px] left-0 w-full h-[calc(100%-60px)] bg-black bg-opacity-85 transition-transform duration-500 ease-in-out transform -translate-x-full z-50 sm:hidden flex items-start justify-center">
+                    <div class="nav_top w-full">
+                        <ul class="m-0 p-0 flex flex-col items-center">
+                            <li class="w-full list-none p-5">
+                                <a href="about.html" class="menu_header">Über mich</a>
+                            </li>
+                            <li class="w-full list-none p-5">
+                                <a href="discover.html" class="menu_header">Entdecke</a>
+                            </li>
+                            <li class="w-full list-none p-5">
+                                <a href="guides.html" class="menu_header">Guides</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>                      
             </div>
         </nav>
         <figure class="relative before:absolute before:w-full before:h-full before:inset-0">
-            <img src="/img/banner/indonesia/banner_indonesia.JPG" class="h-auto max-h-48 w-full shadow-lg">
+            <img src="img/guides/banner_guides.jpeg" class="h-auto max-h-48 w-full shadow-lg">
             <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-10 bg-white backdrop-filter backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 text-white banner_headline font_banner font_sh">
-                Indonesien
+                Finde deine Guides
             </h2>
         </figure>
+        </header>  
     </header>
     <main class="flex-grow flex items-start">
-        <div class="flex flex-wrap justify-center sm:justify-start items-center sm:items-start max-w-screen-xl mx-auto">     
-            <nav class="flex justify-start items-start w-full m-0">
-                <ul class="flex pl-5 pr-5 list-none">
-                    <li class="inline">
-                        <a class="font-black no-underline hover:underline" href="/discover.html">Entdecke</a>
-                    </li>
-                    <li class="inline before:content-['/\00a0']">
-                        <span class="font-bold">Indonesien</span>
-                    </li>
-                </ul>
-            </nav>
+        <div class="flex flex-wrap justify-center sm:justify-start items-center sm:items-start max-w-screen-xl mx-auto">
             <div class="flex items-start border-b-4 border-gray-500 w-full mb-8 pt-6">
-                <h1 class="font_sb font_lh_15 font_uc font_black text-3xl ml-4 whitespace-nowrap">Stories</h1>
-                <p class="whitespace-nowrap self-end mb-8 ml-4 text-lg">Finde dein nächstes Abendteuer</p>
+                <h1 class="font_sb font_lh_15 font_uc font_black text-3xl ml-4 whitespace-nowrap">Guides</h1>
+                <p class="whitespace-nowrap self-end mb-8 ml-4 text-lg">Durchsuche nützliche Ratgeber</p>
             </div>
             <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
                 <figure class="w-full h-60 mb-4">
-                    <img src="\img\discover\indonesia\ijen_top.JPG" class="w-full h-full object-cover" alt="Nebel umgibt den See auf dem Vulkan Ijen">
+                    <img src="img/guides/cover_cambodia_market.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                 </figure>
                 <div class="p-4 pb-8">
-                    <h3 class="font_b font_uc mb-2 h-14 overflow-hidden line-clamp-2">Nächtliche Tour auf den Ijen</h3>
+                    <h3 class="font_b font_uc mb-2 h-14 overflow-hidden line-clamp-2">Nachtmärkte rund um Phnom Penh</h3>
                     <hr class="border-t border-gray-400 rounded-full mb-4">
-                    <section class="text-left mb-9 h-20 overflow-hidden line-clamp-3">Der Ijen-Vulkan auf der indonesischen Insel Java ist ein faszinierendes Naturwunder, das vor allem nachts seine Magie entfaltet...</section>
+                    <section class="text-left mb-9 h-20 overflow-hidden line-clamp-3">Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</section>
+                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
+                </div>
+            </article>
+            <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
+                <figure class="card_guide_figure w-full h-60 mb-4">
+                    <img src="img/guides/cover_angkor_wat.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                </figure>
+                <div class="p-4 pb-8">
+                    <h3 class="font_b font_uc mb-2 h-14  line-clamp-2">Must-sees im Angkor Wat</h3>
+                    <hr class="border-t border-gray-400 rounded-full mb-4">
+                    <section class="text-left mb-9 h-20 line-clamp-3">Angkor Wat, die bekannteste Tempelanlage in der Region Angkor, ist ein architektonisches Meisterwerk und ein Symbol für Kambodscha...</section>
                     <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
                 </div>
             </article>
             <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
                 <figure class="w-full h-60 mb-4">
-                    <img src="\img\discover\indonesia\bromo.JPG" class="w-full h-full object-cover" alt="Im Horizont streckt sich eine Vulkanlandschaft mit einem aktiven Vulkan">
+                    <img src="img/guides/cover_cuba_beaches.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                 </figure>
                 <div class="p-4 pb-8">
-                    <h3 class="font_b font_uc mb-2 h-14 overflow-hidden line-clamp-2">Den Bromo auf eigene Faust erkunden</h3>
+                    <h3 class="font_b font_uc mb-2 h-14 line-clamp-2">Die schönsten Strände Kubas</h3>
                     <hr class="border-t border-gray-400 rounded-full mb-4">
-                    <section class="text-left mb-9 h-20 overflow-hidden line-clamp-3">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java...</section>
-                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="./indonesia/bromo.html">Weiterlesen</a>
+                    <section class="text-left mb-9 h-20 line-clamp-3">Kuba ist ein Paradies für Strandliebhaber, und seine Küsten bieten einige der schönsten Strände der Welt. Hier sind meine Top 3 Empfehlungen...</section>
+                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
                 </div>
             </article>
+            <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
+                <figure class="w-full h-60 mb-4">
+                    <img src="img/guides/cover_hoian_tipps.jpg" class="card_guide_img w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                </figure>
+                <div class="p-4 pb-8">
+                    <h3 class="font_b font_uc mb-2 h-14 overflow-hidden line-clamp-2">Die besten Aktivitäten in Hoi An</h3>
+                    <hr class="border-t border-gray-400 rounded-full mb-4">
+                    <section class="text-left mb-9 h-20 overflow-hidden line-clamp-3">Hoi An, eine antike Stadt in Vietnam, ist ein wahrer Traum für Reisende. Hier sind einige der besten Aktivitäten, die du in Hoi An erleben kannst...</section>
+                    <a class="font_sb border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-2 hover:shadow-lg" href="">Weiterlesen</a>
+                </div>
+            </article>
+        </div>                    
     </main>
     <footer class="bg-white flex justify-between items-center py-5 px-4 shadow-md">
         <nav class="flex space-x-4">
