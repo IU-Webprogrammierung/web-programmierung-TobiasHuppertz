@@ -12,3 +12,9 @@
     transform: translateX(0);
     transition: 0.5s all ease;
 }
+
+.nav_search.show {
+    transform: translateX(0);
+    transition: 0.5s all ease;
+}
+
