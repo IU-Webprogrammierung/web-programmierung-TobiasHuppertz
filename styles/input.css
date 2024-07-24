@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "WorkSans";
+    src: url(/fonts/worksans/WorkSans.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(/fonts/lobster/Lobster.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(/fonts/opensans/OpenSans.ttf);
+}

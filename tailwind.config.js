@@ -24,7 +24,12 @@ module.exports = {
       },
       animation: {
         typing: "typing 2s steps(22) forwards, blink 1s infinite"
-      }
+      },
+      fontFamily: {
+        opensans: ["OpenSans", "sans-serif"],
+        worksans: ["WorkSans", "sans-serif"],
+        lobster: ["Lobster", "sans-serif"],
+      },
     },
   },
   plugins: [],
