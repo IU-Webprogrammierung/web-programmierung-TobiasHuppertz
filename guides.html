@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBlog</title>
-    <link rel="stylesheet" href="/styles/main_tail.css">
-    <link rel="stylesheet" href="/styles/query_tail.css">
-    <link rel="stylesheet" href="/styles/typography.css">
     <link rel="stylesheet" href="/styles/output.css">
     <link rel="stylesheet" href="/styles/animation.css">
     <script src="js/script.js" defer></script>
@@ -18,21 +15,21 @@
             <!-- Nav-Menu (Desktop)-->
             <ul class="hidden md:flex m-0 p-0 justify-center items-center">
                 <li class="inline-block list-none px-3.5">
-                    <a href="" class="relative top-0 no-underline font_nav font_ls_11 font_black 
+                    <a href="" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                         after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                         hover:after:scale-x-100">
                                         Über mich
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="discover.html" class="relative top-0 no-underline font_nav font_ls_11 font_black 
+                    <a href="discover.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Entdecke
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="guides.html" class="relative top-0 no-underline font_nav font_ls_11 font_black 
+                    <a href="guides.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Guides
@@ -84,7 +81,7 @@
         </nav>
         <figure class="relative before:absolute before:w-full before:h-full before:inset-0">
             <img src="img/guides/banner_guides.jpeg" class="h-auto max-h-48 w-full shadow-lg">
-            <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-10 bg-white backdrop-filter backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 text-white banner_headline font_banner font_sh">
+            <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-10 bg-white backdrop-filter backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 text-white font-lobster text-3xl text-shadow-xl">
                 Finde deine Guides
             </h2>
         </figure>
@@ -92,8 +89,8 @@
     <main class="flex-grow flex items-start">
         <div class="flex flex-wrap justify-center sm:justify-start items-center sm:items-start max-w-screen-xl mx-auto">
             <div class="flex items-start border-b-4 border-gray-500 w-full mb-8 pt-6">
-                <h1 class="font-opensans text-3xl ml-4 whitespace-nowrap">Guides</h1>
-                <p class="whitespace-nowrap self-end mb-8 ml-4 text-lg">Durchsuche nützliche Ratgeber</p>
+                <h1 class="font-opensans font-semibold uppercase leading-6 text-3xl ml-4 whitespace-nowrap">Guides</h1>
+                <p class="font-worksans whitespace-nowrap mb-6 pt-1 ml-4">Durchsuche nützliche Ratgeber</p>
             </div>
             <div class="w-full flex justify-end px-11 sm:px-3">
                 <div class="relative inline-block text-left">
@@ -106,7 +103,7 @@
                       </svg>
                     </button>
                   </div>
-                  <div id="dropdown-menu" class="origin-top-right absolute w-36 right-0 mt-2 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button" tabindex="-1">
+                  <div id="dropdown-menu" class="origin-top-right absolute w-36 right-0 mt-2 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button" tabindex="-1">
                     <div class="py-1 text-black" role="none">
                       <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem">Relevanz</a>
                       <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem">Neuste</a>
@@ -170,36 +167,36 @@
                             <img src="img/guides/cover_cambodia_market.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>
                         <div class="p-4 flex-1 flex flex-col">
-                            <h3 class="pb-3 sm:min-h-16 sm:pb-0 text-xl">Nachtmärkte rund um Phnom Penh</h3>
+                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Nachtmärkte rund um Phnom Penh</h3>
                             <hr class="border-t border-grey-light pt-2">
-                            <section class="mb-4 text-grey-darker text-sm flex-1">Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</section>
-                            <a class="font_sb max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
+                            <section class="font-worksans text-sm mb-4 flex-1">Wenn Ihr nach Phnom Penh reist und das lokale Leben hautnah erleben möchtet, sind die Nachtmärkte eine großartige Möglichkeit, die kambodschanische Kultur zu entdecken...</section>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
                         </div>
                     </article>  
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
                     <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col">
                         <figure class="w-full h-48">
-                            <img src="img/guides/cover_cuba_beaches.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                            <img src="img/guides/cover_angkor_wat.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>
                         <div class="p-4 flex-1 flex flex-col">
-                            <h3 class="pb-3 sm:min-h-16 sm:pb-0 text-xl">Must-sees im Angkor Wat</h3>
+                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Must-sees im Angkor Wat</h3>
                             <hr class="border-t border-grey-light pt-2">
-                            <section class="mb-4 text-grey-darker text-sm flex-1">Angkor Wat, die bekannteste Tempelanlage in der Region Angkor, ist ein architektonisches Meisterwerk und ein Symbol für Kambodscha...</section>
-                            <a class="font_sb max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
+                            <section class="font-worksans text-sm mb-4 text-grey-darker flex-1">Angkor Wat, die bekannteste Tempelanlage in der Region Angkor, ist ein architektonisches Meisterwerk und ein Symbol für Kambodscha...</section>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
                         </div>
                     </article>  
                 </div>                  
                 <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
                     <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col">
                         <figure class="w-full h-48">
-                            <img src="img/guides/cover_angkor_wat.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
+                            <img src="img/guides/cover_cuba_beaches.JPG" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>
                         <div class="p-4 flex-1 flex flex-col">
-                            <h3 class="pb-3 sm:min-h-16 sm:pb-0 text-xl">Die schönsten Strände Kubas</h3>
+                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Die schönsten Strände Kubas</h3>
                             <hr class="border-t border-grey-light pt-2">
-                            <section class="mb-4 text-grey-darker text-sm flex-1">Kuba ist ein Paradies für Strandliebhaber, und seine Küsten bieten einige der schönsten Strände der Welt. Hier sind meine Top 3 Empfehlungen...</section>
-                            <a class="font_sb max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
+                            <section class="font-worksans text-sm  mb-4 text-grey-darker flex-1">Kuba ist ein Paradies für Strandliebhaber, und seine Küsten bieten einige der schönsten Strände der Welt. Hier sind meine Top 3 Empfehlungen...</section>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
                         </div>
                     </article>  
                 </div>  
@@ -209,14 +206,13 @@
                             <img src="img/guides/cover_hoian_tipps.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>
                         <div class="p-4 flex-1 flex flex-col">
-                            <h3 class="pb-3 sm:min-h-16 sm:pb-0 text-xl">Die besten Aktivitäten in Hoi An</h3>
+                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Die besten Aktivitäten in Hoi An</h3>
                             <hr class="border-t border-grey-light pt-2">
-                            <section class="mb-4 text-grey-darker text-sm flex-1">Hoi An, eine antike Stadt in Vietnam, ist ein wahrer Traum für Reisende. Hier sind einige der besten Aktivitäten, die du in Hoi An erleben kannst...</section>
-                            <a class="font_sb max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
+                            <section class="font-worksans text-sm mb-4 text-grey-darker flex-1">Hoi An, eine antike Stadt in Vietnam, ist ein wahrer Traum für Reisende. Hier sind einige der besten Aktivitäten, die du in Hoi An erleben kannst...</section>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
                         </div>
                     </article>  
                 </div>  
-            
         </div>
         <button id="backtop_button" class="fixed bottom-12 right-4 bg-white hover:bg-gray-200 text-gray-800 w-12 h-12 flex items-center justify-center rounded-full shadow-md">
             <img src="/img/sys/airplane.png" class="h-8 w-8">
@@ -226,14 +222,18 @@
         <nav class="flex space-x-4">
             <ul class="flex space-x-4">
                 <li>
-                    <a href="legalnotice.html" class="font-footer 
+                    <a href="legalnotice.html" class="relative top-0 no-underline font-worksans text-xs
                                                         after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                         hover:after:scale-x-100">
                                                         Impressum
                     </a>
                 </li>
                 <li>
-                    <a href="privacy.html" class="font-footer after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Datenschutz</a>
+                    <a href="privacy.html" class="relative top-0 no-underline font-worksans text-xs
+                                                    after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
+                                                    hover:after:scale-x-100">
+                                                    Datenschutz
+                    </a>
                 </li>
             </ul>
         </nav>
