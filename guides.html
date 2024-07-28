@@ -105,14 +105,13 @@
                   </div>
                   <div id="dropdown-menu" class="origin-top-right absolute w-36 right-0 mt-2 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button" tabindex="-1">
                     <div class="py-1 text-black" role="none">
-                      <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem">Relevanz</a>
-                      <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem">Neuste</a>
-                      <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem">Älteste</a>
+                        <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem" onclick="sortByRelevanz(); document.getElementById('dropdown-selected-option').textContent = 'Relevanz';">Relevanz</a>
+                        <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem" onclick="sortByNewest(); document.getElementById('dropdown-selected-option').textContent = 'Neuste';">Neuste</a>
+                        <a href="#" class="block px-4 py-2 text-left text-sm text-black hover:bg-gray-100 focus:bg-slate-500" role="menuitem" onclick="sortByOldest(); document.getElementById('dropdown-selected-option').textContent = 'Älteste';">Älteste</a>
                     </div>
                   </div>
                 </div>
-              </div>
-              
+              </div>              
               
             <!--
             <article class="max-w-xs w-full h-auto text-center flex flex-col items-center m-4 shadow-lg">
@@ -160,9 +159,9 @@
                 </div>
             </article>
             -->
-            <div class="flex flex-wrap px-8 sm:px-0"> 
+            <div id="containerParent" class="flex flex-wrap px-8 sm:px-0"> 
                 <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-                    <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col">
+                    <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col sort-container" data-clickcount="50" data-date="2024-07-25">
                         <figure class="w-full h-48">
                             <img src="img/guides/cover_cambodia_market.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>
@@ -175,7 +174,7 @@
                     </article>  
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-                    <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col">
+                    <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col sort-container" data-clickcount="30" data-date="2024-07-26">
                         <figure class="w-full h-48">
                             <img src="img/guides/cover_angkor_wat.jpg" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>
@@ -188,7 +187,7 @@
                     </article>  
                 </div>                  
                 <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
-                    <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col">
+                    <article class="bg-white shadow-lg overflow-hidden flex-1 flex flex-col sort-container" data-clickcount="30" data-date="2024-07-26">
                         <figure class="w-full h-48">
                             <img src="img/guides/cover_cuba_beaches.JPG" class="w-full h-full object-cover" alt="Viele Menschen sitzen nachts mittem auf einem Platz und Essen">
                         </figure>

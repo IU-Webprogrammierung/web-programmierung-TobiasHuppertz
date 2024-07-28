@@ -74,4 +74,35 @@ document.addEventListener("click", function (event) {
 });
 
 
+// Sortierfunktion Artikel
 
+function sortByRelevanz() {
+    sortContainers('relevanz');
+}
+
+function sortByNewest() {
+    sortContainers('neuste');
+}
+
+function sortByOldest() {
+    sortContainers('älteste');
+}
+
+function sortContainers(selectedSort) {
+    const containerParent = document.getElementById('containerParent');
+    const containers = Array.from(containerParent.getElementsByClassName('sort-container'));
+
+    containers.sort((a, b) => {
+        if (selectedSort === 'relevanz') {
+            return b.getAttribute('data-clickcount') - a.getAttribute('data-clickcount');
+        } else if (selectedSort === 'neuste') {
+            return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));
+        } else if (selectedSort === 'älteste') {
+            return new Date(a.getAttribute('data-date')) - new Date(b.getAttribute('data-date'));
+        }
+    });
+
+    containers.forEach(container => {
+        containerParent.appendChild(container.parentNode);
+    });
+}
