@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBlog</title>
-    <link rel="stylesheet" href="/styles/main_tail.css">
-    <link rel="stylesheet" href="/styles/query_tail.css">
-    <link rel="stylesheet" href="/styles/typography.css">
     <link rel="stylesheet" href="/styles/output.css">
     <link rel="stylesheet" href="/styles/animation.css">
     <script src="/js/script.js" type="text/javascript" defer></script>
@@ -18,21 +15,21 @@
             <!-- Nav-Menu (Desktop)-->
             <ul class="hidden md:flex m-0 p-0 justify-center items-center">
                 <li class="inline-block list-none px-3.5">
-                    <a href="#" class="relative top-0 no-underline font_nav font_ls_11 font_black after:content-[''] 
-                                        after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
+                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                         hover:after:scale-x-100">
                                         Über mich
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="/discover.html" class="relative top-0 no-underline font_nav font_ls_11 font_black 
+                    <a href="../discover.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Entdecke
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="/guides.html" class="relative top-0 no-underline font_nav font_ls_11 font_black 
+                    <a href="../guides.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Guides
@@ -81,14 +78,17 @@
                     </div>
                 </div>                      
             </div>
-        </nav>       
+        </nav>     
     </header>
     <main class="flex-grow items-start pt-16">
         <div class="relative w-full">
-            <div class="absolute top-0 left-0 w-full h-full bg-white/10 backdrop-blur z-10"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-white/10 backdrop-blur-sm z-"></div>
             <img src="/img/discover/indonesia/bromo.JPG" class="block w-full h-auto max-h-[250px] object-cover">
-            <h1 class="absolute top-[20%] left-[18%] z-20 text-gray-800 font-bold uppercase">Den Bromo auf eigene Faust erkunden</h1>
-            <h3 class="absolute bottom-[30%] left-[18%] z-20 text-gray-800"><a class="text-gray-800" href="/discover/indonesia.html">Indonesien </a>/ 27.03.2024</h3>
+            <h1 class="absolute top-[35%] left-[18%] z-10 text-gray-800 text-xl sm:text-3xl font-bold uppercase">Den Bromo auf eigene Faust erkunden</h1>
+            <div class="flex absolute bottom-[30%] left-[18%] z-10">
+                <a class="font-opensans text-sm sm:text-base  font-smoothbold text-gray-800 after:content-['\00a0/\00a0']" href="/discover/indonesia.html">Indonesien</a>
+                <h3 class="font-opensans text-sm sm:text-base font-smoothbold text-gray-800">27.03.2024</h3>
+            </div>
         </div> 
         <div class="flex flex-wrap justify-center max-w-screen-xl mx-auto
                     sm:justify-start items-center sm:items-start">
@@ -96,49 +96,49 @@
                 <div class="flex flex-col 
                             sm:flex-row-reverse mb-[10%] sm:mb-[20%] sm:mt-[5%] odd:sm:flex-row">
                     <section class="w-11/12 mx-auto block lg:px-8">
-                        <h1 class="text-4xl font-extrabold uppercase text-black my-8">Nächster Halt, Bromo!</h1>
-                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 ml-0">
-                        <p class="leading-loose mb-4">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java. Mit einer Höhe von 2329 Metern ist er der jüngste Krater des Tengger-Vulkan-Massivs und einer der aktivsten Vulkane auf Java.</p>
-                        <p class="leading-loose">Wenn ihr den Bromo auf eigene Faust erklimmen möchtet, empfehle ich, eine Unterkunft in einem der vielen Bergdörfer zu suchen. Die Reise ist anspruchsvoll und sollte daher nicht unterschätzt werden. Wir haben uns für das Bromo Backpacker Tosari in Wonokitri entschieden. Von hier aus könnt ihr den Vulkan in einem Tagesmarsch erreichen. Das kleine Dorf ist bereits eine Sehenswürdigkeit, da die Häuser farbenfroh gestrichen sind und auf den vielen Mauern und Wänden Streetart zu finden ist!</p>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold uppercase my-8 mx-2">Nächster Halt, Bromo!</h1>
+                        <hr class="border-t border-gray-400  rounded-full max-w-[120px] mb-8 mx-2">
+                        <p class="leading-loose mb-4 mx-2">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java. Mit einer Höhe von 2329 Metern ist er der jüngste Krater des Tengger-Vulkan-Massivs und einer der aktivsten Vulkane auf Java.</p>
+                        <p class="leading-loose p-2">Wenn ihr den Bromo auf eigene Faust erklimmen möchtet, empfehle ich, eine Unterkunft in einem der vielen Bergdörfer zu suchen. Die Reise ist anspruchsvoll und sollte daher nicht unterschätzt werden. Wir haben uns für das Bromo Backpacker Tosari in Wonokitri entschieden. Von hier aus könnt ihr den Vulkan in einem Tagesmarsch erreichen. Das kleine Dorf ist bereits eine Sehenswürdigkeit, da die Häuser farbenfroh gestrichen sind und auf den vielen Mauern und Wänden Streetart zu finden ist!</p>
                     </section>
                     <div class="relative w-full h-[400px] mb-8">
                         <img src="\img\discover\indonesia\wonokitri_homes.JPG" class="absolute top-0 left-0 w-full h-auto object-cover" alt="Farbenfrohe Häuser an einem Berghang">
-                        <img src="\img\discover\indonesia\wonokitri_arts.JPG" class="absolute bottom-0 md:bottom-[60px] lg:bottom-[-120px] right-1 w-1/2 lg:w-2/5 h-[150px] lg:h-[170px] z-10 object-cover bg-white p-2 pb-6 shadow-lg transform rotate-3" alt="Thor-Comic-Figur auf einer Wand als Streetart">
+                        <img src="\img\discover\indonesia\wonokitri_arts.JPG" class="absolute bottom-10 sm:bottom-[-60px] md:bottom-[-80px] lg:bottom-[-180px] right-1 w-1/2 sm:w-2/5 z-10 object-cover bg-white p-2 pb-6 shadow-lg transform rotate-3" alt="Thor-Comic-Figur auf einer Wand als Streetart">
                     </div>
                 </div>
                 <div class="flex flex-col 
                             sm:flex-row-reverse mb-[10%] sm:mb-[20%] sm:mt-[5%] odd:sm:flex-row">
                     <section class="w-11/12 mx-auto block lg:px-8">
-                        <h1 class="text-4xl font-extrabold uppercase text-black my-8">Nächtlicher Aufstieg</h1>
-                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 ml-0">
-                        <p class="leading-loose mb-4">Es ist lohnenswert, sich bereits frühmorgens auf den Weg zu machen, bevor die Sonne aufgeht. Denn von der Plattform "Lautan Pasir Bromo" aus habt ihr einen der besten Ausblicke auf den Vulkan, während die Sonne im Hintergrund aufgeht! Die atemberaubenden Farben des Himmels und die mystische Atmosphäre machen das Erlebnis unvergesslich. Außerdem könnt ihr die Ruhe und Stille genießen, bevor die meisten Touristen eintreffen. Mit etwas Glück seht ihr auch den Vulkan in Aktion, was das Abenteuer noch spektakulärer macht.</p>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold uppercase my-8 mx-2">Nächtlicher Aufstieg</h1>
+                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 mx-2">
+                        <p class="leading-loose mb-4 mx-2">Es ist lohnenswert, sich bereits frühmorgens auf den Weg zu machen, bevor die Sonne aufgeht. Denn von der Plattform "Lautan Pasir Bromo" aus habt ihr einen der besten Ausblicke auf den Vulkan, während die Sonne im Hintergrund aufgeht! Die atemberaubenden Farben des Himmels und die mystische Atmosphäre machen das Erlebnis unvergesslich. Außerdem könnt ihr die Ruhe und Stille genießen, bevor die meisten Touristen eintreffen. Mit etwas Glück seht ihr auch den Vulkan in Aktion, was das Abenteuer noch spektakulärer macht.</p>
                     </section>
                     <img src="\img\discover\indonesia\bromo_sunrise.JPG" class="w-full lg:w-1/2 h-auto object-cover" alt="Sonnenaufgang in der Nähe des Bromos">
                 </div>
                 <div class="flex flex-col 
                             sm:flex-row-reverse mb-[10%] sm:mb-[20%] sm:mt-[5%] odd:sm:flex-row">
                     <section class="w-11/12 mx-auto block lg:px-8">
-                        <h1 class="text-4xl font-extrabold uppercase text-black my-8">Ausblick genießen</h1>
-                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 ml-0">
-                        <p class="leading-loose mb-4">Sobald die Sonne gänzlich aufgegangen ist, habt ihr ein atemberaubendes Panorama. Die umliegenden Berge und Täler werden in ein warmes, goldenes Licht getaucht, das die Landschaft noch beeindruckender erscheinen lässt. Die klaren Morgenstunden bieten zudem perfekte Bedingungen für spektakuläre Fotos. Ihr könnt in der Ferne die weitläufigen Sanddünen und die üppige Vegetation erkennen, die einen faszinierenden Kontrast zum kargen Vulkankrater bilden.</p>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold uppercase my-8 mx-2">Ausblick genießen</h1>
+                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 mx-2">
+                        <p class="leading-loose mb-4 mx-2">Sobald die Sonne gänzlich aufgegangen ist, habt ihr ein atemberaubendes Panorama. Die umliegenden Berge und Täler werden in ein warmes, goldenes Licht getaucht, das die Landschaft noch beeindruckender erscheinen lässt. Die klaren Morgenstunden bieten zudem perfekte Bedingungen für spektakuläre Fotos. Ihr könnt in der Ferne die weitläufigen Sanddünen und die üppige Vegetation erkennen, die einen faszinierenden Kontrast zum kargen Vulkankrater bilden.</p>
                     </section>
                     <img src="\img\discover\indonesia\bromo.JPG" class="w-full lg:w-1/2 h-auto object-cover" alt="Der Bromo umhüllt von Nebel">
                 </div>
                 <div class="flex flex-col 
                             sm:flex-row-reverse mb-[10%] sm:mb-[20%] sm:mt-[5%] odd:sm:flex-row">
                     <section class="w-11/12 mx-auto block lg:px-8">
-                        <h1 class="text-4xl font-extrabold uppercase text-black my-8">Auf zum Krater</h1>
-                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 ml-0">
-                        <p class="leading-loose mb-4">Von der Plattform aus findet ihr einen Weg, der euch zum Krater führt. Um den Krater zu erreichen, müsst ihr durch den "Sea of Sand" schreiten, der einer Wüste ähnelt. Vom Kraterrand aus könnt ihr den aktiven Vulkan beobachten. Der Anblick der aufsteigenden Rauchwolken und das Grollen des Vulkans vermitteln ein beeindruckendes Naturerlebnis. Auf dem Weg dorthin könnt ihr zudem die einzigartige Landschaft genießen, die von ihrer vulkanischen Vergangenheit geprägt ist. Achtet jedoch darauf, feste Schuhe und genügend Wasser mitzubringen, da der Weg durchaus anspruchsvoll sein kann.</p>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold uppercase my-8 mx-2">Auf zum Krater</h1>
+                        <hr class="border-t border-gray-400 rounded-full max-w-[120px] mb-8 mx-2">
+                        <p class="leading-loose mb-4 mx-2">Von der Plattform aus findet ihr einen Weg, der euch zum Krater führt. Um den Krater zu erreichen, müsst ihr durch den "Sea of Sand" schreiten, der einer Wüste ähnelt. Vom Kraterrand aus könnt ihr den aktiven Vulkan beobachten. Der Anblick der aufsteigenden Rauchwolken und das Grollen des Vulkans vermitteln ein beeindruckendes Naturerlebnis. Auf dem Weg dorthin könnt ihr zudem die einzigartige Landschaft genießen, die von ihrer vulkanischen Vergangenheit geprägt ist. Achtet jedoch darauf, feste Schuhe und genügend Wasser mitzubringen, da der Weg durchaus anspruchsvoll sein kann.</p>
                     </section>
                     <div class="relative w-full h-[400px] mb-8">
                         <img src="\img\discover\indonesia\bromo_crater.JPG" class="absolute top-0 left-0 w-full h-auto object-cover" alt="Rauch steigt aus dem Kraterloch hinaus">
-                        <img src="\img\discover\indonesia\bromo_wayup.JPG" class="absolute bottom-0 lg:bottom-[-120px] right-1 w-1/2 lg:w-2/5 h-[150px] lg:h-[170px] z-10 object-cover bg-white p-2 pb-6 shadow-lg transform rotate-3" alt="Sandiger Aufsteig zum Kraterrand">
+                        <img src="\img\discover\indonesia\bromo_wayup.JPG" class="absolute bottom-10 sm:bottom-[-60px] md:bottom-[-80px] lg:bottom-[-180px] right-1 w-1/2 sm:w-2/5 z-10 object-cover bg-white p-2 pb-6 shadow-lg transform rotate-3" alt="Sandiger Aufsteig zum Kraterrand">
                     </div>
                 </div>
             </article>
         </div>
-        <button id="backtop_button" class="fixed bottom-12 right-4 bg-white hover:bg-gray-200 text-gray-800 w-12 h-12 flex items-center justify-center rounded-full shadow-md">
+        <button id="backtop_button" class="fixed bottom-12 right-4 bg-white hover:bg-gray-200 text-gray-800 w-12 h-12 flex items-center justify-center rounded-full shadow-md z-40">
             <img src="/img/sys/airplane.png" class="h-8 w-8">
         </button>                                                
     </main>    
