@@ -9,13 +9,13 @@
     <script src="/js/script.js" defer></script>
 </head>
 <body class="w-auto h-screen m-0 p-0 flex flex-col">
-    <header class="items-center">
+    <header class="items-center w-full bg-white fixed top-0 z-50 shadow-md">
         <nav class="flex justify-between items-center w-full p-3">
             <a href="/index.html" class="inline-block bg-[url('/img/sys/logo_schwarz.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
             <!-- Nav-Menu (Desktop)-->
             <ul class="hidden md:flex m-0 p-0 justify-center items-center">
                 <li class="inline-block list-none px-3.5">
-                    <a href="" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                         after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                         hover:after:scale-x-100">
                                         Über mich
@@ -79,21 +79,21 @@
                 </div>                      
             </div>
         </nav>
+    </header>
+    <main class="flex-grow items-start pt-16">
         <figure class="relative before:absolute before:w-full before:h-full before:inset-0">
             <img src="/img/banner/indonesia/banner_indonesia.JPG" class="h-auto max-h-48 w-full shadow-lg">
             <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-10 bg-white backdrop-filter backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 text-white font-lobster text-3xl text-shadow-xl">
                 Indonesien
             </h2>
         </figure>
-    </header>
-    <main class="flex-grow flex items-start">
         <div class="flex flex-wrap justify-center sm:justify-start items-center sm:items-start max-w-screen-xl mx-auto">     
             <nav class="flex justify-start items-start w-full m-0">
                 <ul class="flex py-2 px-5 list-none">
                     <li class="inline">
-                        <a class="font-worksans text-sm no-underline hover:underline" href="/discover.html">Entdecke &nbsp;</a>
+                        <a class="font-worksans text-sm no-underline hover:underline" href="/discover.html">Entdecke</a>
                     </li>
-                    <li class="inline before:content-['/\00a0']">
+                    <li class="inline before:content-['\00a0/\00a0']">
                         <span class="font-worksans text-sm font-smoothbold">Indonesien</span>
                     </li>
                 </ul>
@@ -112,7 +112,7 @@
                             <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Nächtliche Tour auf den Ijen</h3>
                             <hr class="border-t border-grey-light pt-2">
                             <section class="font-worksans text-sm mb-4 flex-1">Der Ijen-Vulkan auf der indonesischen Insel Java ist ein faszinierendes Naturwunder, das vor allem nachts seine Magie entfaltet...</section>
-                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="#">Weiterlesen</a>
                         </div>
                     </article>  
                 </div>
@@ -125,7 +125,7 @@
                             <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Den Bromo auf eigene Faust erkunden</h3>
                             <hr class="border-t border-grey-light pt-2">
                             <section class="font-worksans text-sm mb-4 text-grey-darker flex-1">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java...</section>
-                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="">Weiterlesen</a>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="./indonesia/bromo.html">Weiterlesen</a>
                         </div>
                     </article>  
                 </div>                   
@@ -135,26 +135,26 @@
             </button>
         </div>
     </main>
-    <footer class="bg-white flex justify-between items-center py-5 px-4 shadow-md">
-        <nav class="flex space-x-4">
+    <footer class="bg-white flex justify-between items-center py-5 px-4 shadow-up">
+        <nav>
             <ul class="flex space-x-4">
                 <li>
-                    <a href="legalnotice.html" class="relative top-0 no-underline font-worksans text-xs
-                                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
-                                                        hover:after:scale-x-100">
-                                                        Impressum
+                    <a href="#" class="relative top-0 no-underline font-worksans text-xs
+                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
+                                        hover:after:scale-x-100">
+                                        Impressum
                     </a>
                 </li>
                 <li>
-                    <a href="privacy.html" class="relative top-0 no-underline font-worksans text-xs
-                                                    after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
-                                                    hover:after:scale-x-100">
-                                                    Datenschutz
+                    <a href="#" class="relative top-0 no-underline font-worksans text-xs
+                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
+                                        hover:after:scale-x-100">
+                                        Datenschutz
                     </a>
                 </li>
             </ul>
         </nav>
-        <nav class="flex space-x-4">
+        <nav>
             <ul class="flex space-x-4">
                 <li>
                     <a href="https://facebook.com" class="social-icon" target="_blank">

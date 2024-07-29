@@ -9,13 +9,13 @@
     <script src="js/script.js" defer></script>
 </head>
 <body class="w-auto h-screen m-0 p-0 flex flex-col">
-    <header class="items-center">
-        <nav class="flex justify-between items-center w-full p-3">
+    <header class="items-center w-full bg-white fixed top-0 z-50 shadow-md">
+        <nav class="flex justify-between items-center p-3">
             <a href="index.html" class="inline-block bg-[url('/img/sys/logo_schwarz.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
             <!-- Nav-Menu (Desktop)-->
             <ul class="hidden md:flex m-0 p-0 justify-center items-center">
                 <li class="inline-block list-none px-3.5">
-                    <a href="" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
                                         after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                         hover:after:scale-x-100">
                                         Über mich
@@ -79,14 +79,14 @@
                 </div>                      
             </div>
         </nav>
+    </header>
+    <main class="flex-grow items-start pt-16">
         <figure class="relative before:absolute before:w-full before:h-full before:inset-0">
             <img src="img/guides/banner_guides.jpeg" class="h-auto max-h-48 w-full shadow-lg">
             <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-10 bg-white backdrop-filter backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 text-white font-lobster text-xl sm:text-3xl text-shadow-xl">
                 Entdecke neue Orte
             </h2>
         </figure>
-    </header>
-    <main class="flex-grow fle items-start">
         <div class="w-full max-w-7xl mx-auto">
             <nav class="flex justify-center items-center w-full p-12">
                 <ul class="w-full flex justify-center gap-7 items-center">
@@ -122,16 +122,18 @@
                 </div>
                 <div class="w-full px-6 py-3 sm:col-span-2 sm:col-start-3 sm:max-h-max sm:p-0">
                     <div class="relative w-full h-full">
-                        <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
-                                <img src="img/discover/cover_indonesia.JPG" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
+                        <a href="discover/indonesia.html">
+                            <div class="relative w-full h-full overflow-hidden group">
+                                <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                                    <img src="img/discover/cover_indonesia.JPG" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
+                                            sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
+                                            sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
+                                    <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Indonesien</p>
+                                </div>
                             </div>
-                            <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
-                                        sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
-                                        sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Indonesien</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="w-full px-6 py-3 sm:col-start-3 sm:row-start-2 sm:max-h-max sm:p-0">
@@ -240,26 +242,26 @@
             <img src="/img/sys/airplane.png" class="h-8 w-8">
         </button>         
     </main>
-    <footer class="bg-white flex justify-between items-center py-5 px-4 shadow-md">
-        <nav class="flex space-x-4">
+    <footer class="bg-white flex justify-between items-center py-5 px-4 shadow-up">
+        <nav>
             <ul class="flex space-x-4">
                 <li>
-                    <a href="legalnotice.html" class="relative top-0 no-underline font-worksans text-xs
-                                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
-                                                        hover:after:scale-x-100">
-                                                        Impressum
+                    <a href="#" class="relative top-0 no-underline font-worksans text-xs
+                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
+                                        hover:after:scale-x-100">
+                                        Impressum
                     </a>
                 </li>
                 <li>
-                    <a href="privacy.html" class="relative top-0 no-underline font-worksans text-xs
-                                                    after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
-                                                    hover:after:scale-x-100">
-                                                    Datenschutz
+                    <a href="#" class="relative top-0 no-underline font-worksans text-xs
+                                        after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
+                                        hover:after:scale-x-100">
+                                        Datenschutz
                     </a>
                 </li>
             </ul>
         </nav>
-        <nav class="flex space-x-4">
+        <nav>
             <ul class="flex space-x-4">
                 <li>
                     <a href="https://facebook.com" class="social-icon" target="_blank">
@@ -284,6 +286,6 @@
                 </li>
             </ul>
         </nav>
-    </footer>    
+    </footer>   
 </body>
 </html>
