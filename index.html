@@ -45,6 +45,10 @@
                 </div>
                 <div class="nav_search fixed top-[60px] left-0 w-full h-[calc(100%-60px)] bg-black bg-opacity-90 
                             transition-transform duration-500 ease-in-out transform -translate-x-full z-50">
+                            <div class="close_search absolute right-2 sm:right-3 top-4 w-8 h-8 flex justify-center items-center">
+                                <span class="absolute w-5 h-px sm:h-0.5 bg-white rounded transform rotate-45"></span>
+                                <span class="absolute w-5 h-px sm:h-0.5 bg-white rounded transform -rotate-45"></span>
+                            </div>                                                       
                     <div class="flex justify-center items-start pt-10 sm:pt-20 h-full">
                         <div class="flex items-center space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-current text-white" viewBox="0 0 30 30">
@@ -56,9 +60,9 @@
                 </div>
                 <!-- Hamburger Menu -->
                 <div class="hamburger_menu relative w-5 h-10 cursor-pointer sm:hidden">
-                    <span class="hamburger_line absolute w-full h-[1.4px] bg-white rounded-[0.5px] transition duration-500 top-[13px]"></span>
-                    <span class="hamburger_line absolute w-full h-[1.4px] bg-white rounded-[0.5px] transition duration-500 top-[20px]"></span>
-                    <span class="hamburger_line absolute w-full h-[1.4px] bg-white rounded-[0.5px] transition duration-500 top-[27px]"></span>
+                    <span class="hamburger_line absolute w-full h-px bg-white rounded transition duration-500 top-[13px]"></span>
+                    <span class="hamburger_line absolute w-full h-px bg-white rounded transition duration-500 top-[20px]"></span>
+                    <span class="hamburger_line absolute w-full h-px bg-white rounded transition duration-500 top-[27px]"></span>
                 </div>
                 <div class="nav_menu flex items-start justify-center fixed top-[60px] left-0 w-full h-[calc(100%-60px)] bg-black bg-opacity-90 
                             transition-transform duration-500 ease-in-out transform -translate-x-full z-50 
@@ -85,7 +89,7 @@
             <h1 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white font-opensans text-white font-smoothbold text-xl sm:text-3xl tracking-wide">Let your life be a journey.</h1>
         </div>   
     </main>
-    <footer class="w-full flex items-center py-5 relative bottom-0 justify-center md:justify-end">
+    <footer class="w-full flex items-center py-5 sm:pr-4 relative bottom-0 justify-center sm:justify-end">
         <nav class="flex justify-center">
             <ul class="m-0 p-0 flex justify-center">
                 <li class="inline-block list-none px-1.5">

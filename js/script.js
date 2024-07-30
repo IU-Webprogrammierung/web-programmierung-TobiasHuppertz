@@ -7,6 +7,7 @@ function open() {
 
 // Toogle Search Menu 
 document.querySelector(".search_icon").addEventListener("click", search);
+document.querySelector(".close_search").addEventListener("click", search);
 function search() {
   document.querySelector(".nav_search").classList.toggle("show");
 }
