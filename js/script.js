@@ -13,7 +13,7 @@ function search() {
 }
 
 // Scroll to Top Button 
-if (document.getElementById("dropdown-button")) {
+if (document.getElementById("backtop_button")) {
     document.addEventListener('DOMContentLoaded', function() {
         var backToTopButton = document.getElementById('backtop_button');
 

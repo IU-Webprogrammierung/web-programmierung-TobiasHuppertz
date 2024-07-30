@@ -819,6 +819,14 @@ video {
   z-index: 40;
 }
 
+.z-auto {
+  z-index: auto;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -1101,6 +1109,18 @@ video {
 
 .h-px {
   height: 1px;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .max-h-48 {
@@ -2281,6 +2301,14 @@ video {
   border-top-width: 1px;
 }
 
+.border-t-0 {
+  border-top-width: 0px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -2864,6 +2892,14 @@ video {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-\[\#336699\]\/\[\.35\] {

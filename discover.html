@@ -10,26 +10,26 @@
 </head>
 <body class="w-auto h-screen m-0 p-0 flex flex-col">
     <header class="items-center w-full bg-white fixed top-0 z-50 shadow-md">
-        <nav class="flex justify-between items-center p-3">
+        <nav class="flex justify-between items-center w-full p-3">
             <a href="index.html" class="inline-block bg-[url('/img/sys/logo_schwarz.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
             <!-- Nav-Menu (Desktop)-->
             <ul class="hidden md:flex m-0 p-0 justify-center items-center">
                 <li class="inline-block list-none px-3.5">
-                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-widest
                                         after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                         hover:after:scale-x-100">
                                         Über mich
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="discover.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="discover.html" class="relative top-0 no-underline font-worksans text-sm tracking-widest 
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Entdecke
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="guides.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="guides.html" class="relative top-0 no-underline font-worksans text-sm tracking-widest
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Guides
@@ -68,15 +68,21 @@
                             transition-transform duration-500 ease-in-out transform -translate-x-full z-50 
                             sm:hidden">
                     <div class="nav_top w-full">
-                        <ul class="m-0 p-0 flex flex-col items-center text-center">
+                        <ul class="flex flex-col items-center text-center">
                             <li class="w-full list-none p-5">
-                                <a href="#" class="font-worksans text-lg text-white">Über mich</a>
+                                <a href="#" class="font-worksans text-lg text-white tracking-wide">
+                                    Über mich
+                                </a>
                             </li>
                             <li class="w-full list-none p-5">
-                                <a href="discover.html" class="font-worksans text-lg text-white">Entdecke</a>
+                                <a href="discover.html" class="font-worksans text-lg text-white tracking-wide">
+                                    Entdecke
+                                </a>
                             </li>
                             <li class="w-full list-none p-5">
-                                <a href="guides.html" class="font-worksans text-lg text-white">Guides</a>
+                                <a href="guides.html" class="font-worksans text-lg text-white tracking-wide">
+                                    Guides
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -98,13 +104,19 @@
                         <a class="font-worksans text-sm text-gray-500">Alle</a>
                     </li>
                     <li class="list-none mx-2">
-                        <a class="font-worksans text-sm cursor-pointer hover:font-smoothbold hover:underline">Europa</a>
+                        <a class="font-worksans text-sm cursor-pointer hover:font-smoothbold hover:underline">
+                            Europa
+                        </a>
                     </li>
                     <li class="list-none mx-2">
-                        <a class="font-worksans text-sm cursor-pointer hover:font-smoothbold hover:underline">Amerika</a>
+                        <a class="font-worksans text-sm cursor-pointer hover:font-smoothbold hover:underline">
+                            Amerika
+                        </a>
                     </li>
                     <li class="list-none mx-2">
-                        <a class="font-worksans text-sm cursor-pointer hover:font-smoothbold hover:underline">Asien</a>
+                        <a class="font-worksans text-sm cursor-pointer hover:font-smoothbold hover:underline">
+                            Asien
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -113,13 +125,15 @@
                 <div class="w-full px-6 py-3 sm:col-span-2 sm:row-span-2 sm:max-h-max sm:p-0">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_kuba.jpg" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Kuba</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Kuba
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -128,13 +142,15 @@
                     <div class="relative w-full h-full">
                         <a href="discover/indonesia.html">
                             <div class="relative w-full h-full overflow-hidden group">
-                                <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                                <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                     <img src="img/discover/cover_indonesia.JPG" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                                </div>
+                                </figure>
                                 <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                             sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                             sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                    <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Indonesien</p>
+                                    <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                        Indonesien
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -143,13 +159,15 @@
                 <div class="w-full px-6 py-3 sm:col-start-3 sm:row-start-2 sm:max-h-max sm:p-0">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_usa.JPG" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">USA</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    USA
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -157,13 +175,15 @@
                 <div class="w-full px-6 py-3 sm:col-start-4 sm:row-start-2 sm:max-h-max sm:p-0">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_italy.jpg" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Italien</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Italien
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -171,13 +191,15 @@
                 <div class="w-full px-6 py-3 sm:col-span-2 sm:row-span-2 sm:col-start-5 sm:row-start-1 sm:max-h-max sm:p-0">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_dublin.jpg" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Dublin</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Dublin
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -187,13 +209,15 @@
                 <div class="w-full px-6 py-3 sm:w-1/4 sm:h-full sm:p-2">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_newzealand.JPG" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Neuseeland</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Neuseeland
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -201,13 +225,15 @@
                 <div class="w-full px-6 py-3 sm:w-1/4 sm:h-full sm:p-2">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_singapor.JPG" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Singapur</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Singapur
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -215,13 +241,15 @@
                 <div class="w-full px-6 py-3 sm:w-1/4 sm:h-full sm:p-2">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_australia.jpg" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Australien</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Australien
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -229,13 +257,15 @@
                 <div class="w-full px-6 py-3 sm:w-1/4 sm:h-full sm:p-2">
                     <div class="relative w-full h-full">
                         <div class="relative w-full h-full overflow-hidden group">
-                            <div class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
+                            <figure class="flex items-center justify-center w-full h-full sm:transition-transform sm:duration-[0.7s] sm:group-hover:scale-150 sm:group-hover:rotate-30 sm:group-hover:filter-blur-[7px]">
                                 <img src="img/discover/cover_malaysia.jpg" class="w-full max-h-80 object-cover sm:max-h-max sm:h-full">
-                            </div>
+                            </figure>
                             <div class="absolute bottom-0 left-0 w-full h-12 sm:h-full flex flex-col items-center justify-center text-center gap-2.5 text-[#e8e8e8] p-5 leading-6 sm:opacity-0 pointer-events-none bg-black bg-opacity-70 
                                         sm:transform sm:translate-y-12 sm:transition-all sm:duration-[0.7s]
                                         sm:group-hover:opacity-100 sm:group-hover:translate-y-0">
-                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">Malaysia</p>
+                                <p class="font-opensans text-lg sm:text-2xl font-smoothbold uppercase">
+                                    Malaysia
+                                </p>
                             </div>
                         </div>
                     </div>

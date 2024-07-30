@@ -11,25 +11,25 @@
 <body class="w-auto h-screen m-0 p-0 flex flex-col">
     <header class="items-center w-full bg-white fixed top-0 z-50 shadow-md">
         <nav class="flex justify-between items-center w-full p-3">
-            <a href="/index.html" class="inline-block bg-[url('/img/sys/logo_schwarz.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
+            <a href="../index.html" class="inline-block bg-[url('/img/sys/logo_schwarz.png')] bg-center bg-no-repeat bg-cover w-10 h-10"></a>
             <!-- Nav-Menu (Desktop)-->
             <ul class="hidden md:flex m-0 p-0 justify-center items-center">
                 <li class="inline-block list-none px-3.5">
-                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="#" class="relative top-0 no-underline font-worksans text-sm tracking-widest
                                         after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                         hover:after:scale-x-100">
                                         Über mich
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="../discover.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="../discover.html" class="relative top-0 no-underline font-worksans text-sm tracking-widest 
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Entdecke
                     </a>
                 </li>
                 <li class="inline-block list-none px-3.5">
-                    <a href="../guides.html" class="relative top-0 no-underline font-worksans text-sm tracking-wide 
+                    <a href="../guides.html" class="relative top-0 no-underline font-worksans text-sm tracking-widest
                                                     after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-[-2px] after:h-[2px] after:bg-current after:transform after:scale-x-0 after:transition-transform after:duration-300 
                                                     hover:after:scale-x-100">
                                                     Guides
@@ -48,7 +48,7 @@
                     <div class="close_search absolute right-2 sm:right-3 top-4 w-8 h-8 flex justify-center items-center">
                         <span class="absolute w-5 h-px sm:h-0.5 bg-white rounded transform rotate-45"></span>
                         <span class="absolute w-5 h-px sm:h-0.5 bg-white rounded transform -rotate-45"></span>
-                    </div>         
+                    </div>     
                     <div class="flex justify-center items-start pt-10 sm:pt-20 h-full">
                         <div class="flex items-center space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-current text-white" viewBox="0 0 30 30">
@@ -68,15 +68,21 @@
                             transition-transform duration-500 ease-in-out transform -translate-x-full z-50 
                             sm:hidden">
                     <div class="nav_top w-full">
-                        <ul class="m-0 p-0 flex flex-col items-center text-center">
+                        <ul class="flex flex-col items-center text-center">
                             <li class="w-full list-none p-5">
-                                <a href="#" class="font-worksans text-lg text-white">Über mich</a>
+                                <a href="#" class="font-worksans text-lg text-white tracking-wide">
+                                    Über mich
+                                </a>
                             </li>
                             <li class="w-full list-none p-5">
-                                <a href="../discover.html" class="font-worksans text-lg text-white">Entdecke</a>
+                                <a href="discover.html" class="font-worksans text-lg text-white tracking-wide">
+                                    Entdecke
+                                </a>
                             </li>
                             <li class="w-full list-none p-5">
-                                <a href="../guides.html" class="font-worksans text-lg text-white">Guides</a>
+                                <a href="guides.html" class="font-worksans text-lg text-white tracking-wide">
+                                    Guides
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -95,16 +101,24 @@
             <nav class="flex justify-start items-start w-full m-0">
                 <ul class="flex py-2 px-4 list-none">
                     <li class="inline">
-                        <a class="font-worksans text-xs sm:text-sm no-underline hover:underline" href="/discover.html">Entdecke</a>
+                        <a class="font-worksans text-xs sm:text-sm no-underline hover:underline" href="/discover.html">
+                            Entdecke
+                        </a>
                     </li>
                     <li class="inline before:content-['\00a0/']">
-                        <span class="font-worksans text-xs sm:text-sm font-smoothbold">Indonesien</span>
+                        <span class="font-worksans text-xs sm:text-sm font-smoothbold">
+                            Indonesien
+                        </span>
                     </li>
                 </ul>
             </nav>
             <div class="flex items-start border-b-4 border-gray-500 w-full mb-8 pt-6">
-                <h1 class="font-opensans font-semibold uppercase leading-6 text-xl sm:text-3xl ml-4 whitespace-nowrap">Stories</h1>
-                <p class="font-worksans text-sm sm:text-base whitespace-nowrap mb-6 pt-1 sm:pt-3 ml-4">Finde dein nächstes Abendteuer</p>
+                <h1 class="font-opensans font-semibold uppercase leading-6 text-xl sm:text-3xl ml-4 whitespace-nowrap">
+                    Stories
+                </h1>
+                <p class="font-worksans text-sm sm:text-base whitespace-nowrap mb-6 pt-1 sm:pt-3 ml-4">
+                    Finde dein nächstes Abendteuer
+                </p>
             </div>
             <div class="flex flex-wrap px-8 sm:px-0"> 
                 <div class="w-full sm:w-1/2 md:w-1/3 flex flex-col p-3">
@@ -113,10 +127,16 @@
                             <img src="\img\discover\indonesia\ijen_top.JPG" class="w-full h-full object-cover" alt="Nebel umgibt den See auf dem Vulkan Ijen">
                         </figure>
                         <div class="p-4 flex-1 flex flex-col">
-                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Nächtliche Tour auf den Ijen</h3>
+                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">
+                                Nächtliche Tour auf den Ijen
+                            </h3>
                             <hr class="border-t border-grey-light pt-2">
-                            <section class="font-worksans text-sm mb-4 flex-1">Der Ijen-Vulkan auf der indonesischen Insel Java ist ein faszinierendes Naturwunder, das vor allem nachts seine Magie entfaltet...</section>
-                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="#">Weiterlesen</a>
+                            <section class="font-worksans text-sm mb-4 flex-1">
+                                Der Ijen-Vulkan auf der indonesischen Insel Java ist ein faszinierendes Naturwunder, das vor allem nachts seine Magie entfaltet...
+                            </section>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="#">
+                                Weiterlesen
+                            </a>
                         </div>
                     </article>  
                 </div>
@@ -126,10 +146,16 @@
                             <img src="\img\discover\indonesia\bromo.JPG" class="w-full h-full object-cover" alt="Im Horizont streckt sich eine Vulkanlandschaft mit einem aktiven Vulkan">
                         </figure>
                         <div class="p-4 flex-1 flex flex-col">
-                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">Den Bromo auf eigene Faust erkunden</h3>
+                            <h3 class="font-opensans font-smoothbold text-lg uppercase pb-3 sm:min-h-16 sm:pb-0">
+                                Den Bromo auf eigene Faust erkunden
+                            </h3>
                             <hr class="border-t border-grey-light pt-2">
-                            <section class="font-worksans text-sm mb-4 text-grey-darker flex-1">Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java...</section>
-                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="./indonesia/bromo.html">Weiterlesen</a>
+                            <section class="font-worksans text-sm mb-4 text-grey-darker flex-1">
+                                Der Bromo (indonesisch Gunung Bromo) ist ein Stratovulkan auf der indonesischen Insel Java...
+                            </section>
+                            <a class="font-worksans font-smoothbold max-w-44 m-auto text-center items-center block border border-gray-300 shadow-md text-gray-800 cursor-pointer no-underline py-2 px-8 transition duration-200 hover:border-gray-400 hover:bg-gray-50 hover:shadow-lg" href="./indonesia/bromo.html">
+                                Weiterlesen
+                            </a>
                         </div>
                     </article>  
                 </div>                   
@@ -137,7 +163,9 @@
             <button id="backtop_button" class="fixed bottom-14 right-4 bg-white sm:hover:bg-gray-200 text-gray-800 w-12 h-12 hidden flex items-center justify-center rounded-full shadow-md z-40">
                 <figure class="flex flex-wrap justify-center">
                     <img src="/img/sys/airplane.png" class="h-6 w-6">
-                    <figcaption class="font-worksans text-xs font-smoothbold uppercase">Top!</figcaption>
+                    <figcaption class="font-worksans text-xs font-smoothbold uppercase">
+                        Top!
+                    </figcaption>
                 </figure>
             </button>     
         </div>
