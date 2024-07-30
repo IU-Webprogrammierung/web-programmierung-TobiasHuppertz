@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var backToTopButton = document.getElementById('backtop_button');
 
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 600) {
             backToTopButton.classList.add('block');
             backToTopButton.classList.remove('hidden');
         } else {
@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             top: 0,
             behavior: 'smooth'
         });
+        backToTopButton.classList.remove('sm:hover:bg-gray-200');
     });
 });
 
